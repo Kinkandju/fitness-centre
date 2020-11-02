@@ -1,7 +1,7 @@
 {
-  "name": "smart-device",
+  "name": "fitness-centre",
   "version": "1.0.0",
-  "description": "Smart Device, учебный проект Акселератора",
+  "description": "Supergym, учебный проект Акселератора",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
