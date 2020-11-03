@@ -19,7 +19,6 @@ body {
 
   min-width: 320px;
 
-  background-color: $white;
   background-clip: content-box;
 }
 
@@ -38,6 +37,18 @@ h3,
 p {
   margin: 0;
   padding: 0;
+
+  font-family: $font--bebasneue-regular;
+}
+
+h2 {
+  font-size: 49px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: $blue;
 }
 
 button {
@@ -49,4 +60,19 @@ button {
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.layout-container {
+  margin: 0 auto;
+  padding: 0 55px;
+
+  max-width: 1270px;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 15px;
+  }
 }
