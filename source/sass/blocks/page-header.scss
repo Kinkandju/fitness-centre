@@ -11,6 +11,10 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/background_image_desktop_2x.jpg");
   }
+
+  @media (max-width: $desktop-width) {
+    padding: 38px 0 82px 0;
+  }
 }
 
 .page-header__group {
@@ -29,6 +33,18 @@
     letter-spacing: 0.03em;
 
     color: $white;
+  }
+
+  @media (max-width: $desktop-width) {
+    &:first-child {
+      margin: 0 0 20px 0;
+    }
+
+    span,
+    a {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -62,6 +78,23 @@
 
     color: $white;
   }
+
+  @media (max-width: $desktop-width) {
+    top: -3px;
+    left: 0;
+
+    width: 47.8%;
+
+    span {
+      font-size: 34px;
+      line-height: 41px;
+    }
+
+    h1 {
+      font-size: 86px;
+      line-height: 86px;
+    }
+  }
 }
 
 .page-header__list {
@@ -85,6 +118,10 @@
 
     color: $white;
   }
+
+  @media (max-width: $desktop-width) {
+    top: -75px;
+  }
 }
 
 .page-header__button {
@@ -98,6 +135,13 @@
   background-color: transparent;
   border: 4px solid $white;
   color: $white;
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+    top: -20px;
+
+    padding: 20px 30px;
+  }
 }
 
 .page-header__img {
@@ -114,6 +158,23 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/athletes/sportsman_desktop_2x.jpg");
+  }
+
+  @media (max-width: $desktop-width) {
+    top: 0;
+
+    width: 324px;
+    height: 390px;
+
+    background-image: url("../img/athletes/sportsman_tablet_1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/athletes/sportsman_tablet_2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -145,5 +206,9 @@
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
+  }
+
+  @media (max-width: $desktop-width) {
+    display: none;
   }
 }
