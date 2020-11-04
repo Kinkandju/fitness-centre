@@ -16,6 +16,10 @@
 
     padding: 98px 0 16px 0;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 67px 0 70px 0;
+  }
 }
 
 .gym__group {
@@ -85,6 +89,28 @@
       }
     }
   }
+
+  @media (max-width: $tablet-width) {
+    align-items: flex-start;
+
+    margin: 0 0 23px 0;
+    padding: 0;
+
+    h2 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.03em;
+    }
+
+    h3 {
+      margin: 0 0 22px 0;
+    }
+
+    p {
+      padding: 0 30px 0 0;
+      text-align: left;
+    }
+  }
 }
 
 .gym__img {
@@ -120,6 +146,10 @@
   }
 
   @media (max-width: $tablet-width) {
+    left: 0;
+
+    margin: 0 -15px 40px -15px;
+
     width: 320px;
     height: 313px;
 
@@ -171,6 +201,22 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gym2_tablet_2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 0;
+    left: 0;
+
+    margin: 0 -15px;
+
+    width: 320px;
+    height: 167px;
+
+    background-image: url("../img/gym2_mobil_1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gym2_mobil_2x.jpg");
     }
   }
 }
