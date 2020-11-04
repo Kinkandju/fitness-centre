@@ -70,45 +70,57 @@
           <button class="gym__button"></button>
         </div>
       </section>
+    </div>
 
-      <section class="season-tickets" id="season-tickets">
+    <section class="season-tickets" id="season-tickets">
+      <div class="page-main__layout-container layout-container">
         <h2>Абонементы</h2>
+
         <ul class="season-tickets__list">
-          <li>1 месяц</li>
-          <li>6 месяцев</li>
-          <li>12 месяцев</li>
+          <li class="season-tickets__item">
+            <span class="season-tickets__toggle season-tickets__toggle--active">1 месяц</span>
+          </li>
+          <li class="season-tickets__item">
+            <span class="season-tickets__toggle">6 месяцев</span>
+          </li>
+          <li class="season-tickets__item">
+            <span class="season-tickets__toggle">12 месяцев</span>
+          </li>
         </ul>
-        <ul class="season-tickets__list season-tickets__list--month">
+
+        <ul class="season-tickets__list-with-description">
           <li>
             <h3>С тренером</h3>
             <p>12 занятий</p>
             <div class="season-tickets__group">
-              <span class="season-tickets__cost">5000</span>
+              <span class="season-tickets__cost" data-cost="5000">5000</span>
               <span class="season-tickets__ruble">₽</span>
             </div>
-            <button class="season-tickets__button"></button>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
           </li>
           <li>
             <h3>Дневной</h3>
             <p>с 8:00 до 17:00</p>
             <div class="season-tickets__group">
-              <span class="season-tickets__cost">1700</span>
+              <span class="season-tickets__cost" data-cost="1700">1700</span>
               <span class="season-tickets__ruble">₽</span>
             </div>
-            <button class="season-tickets__button"></button>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
           </li>
           <li>
             <h3>Полный день</h3>
             <p>с 8:00 до 22:00</p>
             <div class="season-tickets__group">
-              <span class="season-tickets__cost">2700</span>
+              <span class="season-tickets__cost" data-cost="2700">2700</span>
               <span class="season-tickets__ruble">₽</span>
             </div>
-            <button class="season-tickets__button"></button>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
+    <div class="page-main__layout-container layout-container">
       <section class="promo">
         <h2 class="visually-hidden">Соревнования по CrossFit</h2>
         <div class="promo__group">
@@ -205,8 +217,10 @@
         </ul>
         <button class="coaches__button coaches__button--right"></button>
       </section>
+    </div>
 
-      <section class="advantages">
+    <section class="advantages">
+      <div class="page-main__layout-container layout-container">
         <h2>Наши преимущества</h2>
 
         <div class="advantages__group">
@@ -237,8 +251,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <div class="page-header__layout-container layout-container">
       <section class="stocks" id="stocks">
         <h2>Акции</h2>
 
