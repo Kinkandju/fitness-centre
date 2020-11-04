@@ -15,6 +15,10 @@
   @media (max-width: $desktop-width) {
     padding: 38px 0 82px 0;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 18px 0 55px 0;
+  }
 }
 
 .page-header__group {
@@ -44,6 +48,18 @@
     a {
       font-size: 24px;
       line-height: 24px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &:first-child {
+      margin: 0 0 75px 0;
+    }
+
+    span,
+    a {
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 }
@@ -95,6 +111,28 @@
       line-height: 86px;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    align-self: center;
+
+    margin: 0 auto;
+
+    width: 100%;
+
+    span {
+      margin: 0 0 5px 0;
+
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    h1 {
+      margin: 0 0 4px 0;
+
+      font-size: 78px;
+      line-height: 78px;
+    }
+  }
 }
 
 .page-header__list {
@@ -122,6 +160,10 @@
   @media (max-width: $desktop-width) {
     top: -75px;
   }
+
+  @media (max-width: $tablet-width) {
+    left: -2px;
+  }
 }
 
 .page-header__button {
@@ -141,6 +183,11 @@
     top: -20px;
 
     padding: 20px 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    max-width: 100%;
   }
 }
 

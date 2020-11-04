@@ -6,12 +6,14 @@ $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 $font--bebasneue-regular: "BebasNeue-Regular", "Arial", sans-serif;
-$font--roboto-light: "RobotoCondensed-Regular", "Arial", sans-serif;
+$font--roboto-light: "RobotoCondensed-Light", "Arial", sans-serif;
 $font--roboto-regular: "RobotoCondensed-Regular", "Arial", sans-serif;
 $font--roboto-bold: "RobotoCondensed-Bold", "Arial", sans-serif;
 
 $white: rgba(255, 255, 255, 1);
+$light-gray: rgba(248, 249, 252, 1);
 $blue: rgba(16, 38, 84, 1);
 $light-blue: rgba(16, 58, 174, 1);
+$transparent-blue: rgba(20, 54, 122, 0.5);
 $dark-blue: rgba(3, 10, 26, 1);
 $deep-red: rgba(152, 10, 55, 1);
