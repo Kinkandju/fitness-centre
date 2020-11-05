@@ -18,6 +18,19 @@
 
     color: $white;
   }
+
+  @media (max-width: $desktop-width) {
+    justify-content: center;
+
+    padding: 100px 0 60px 0;
+
+    p {
+      margin: 0 0 31px 0;
+
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
 }
 
 .promo__group {
@@ -25,6 +38,12 @@
   padding: 76px 78px;
 
   background-color: $red;
+
+  @media (max-width: $desktop-width) {
+    padding: 42px 45px;
+
+    width: 43%;
+  }
 }
 
 .promo__text {
@@ -50,6 +69,16 @@
 
     color: $white;
   }
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+
+    h3 {
+      font-size: 52px;
+      line-height: 52px;
+      letter-spacing: 0.03em;
+    }
+  }
 }
 
 .promo__title {
@@ -64,6 +93,15 @@
   color: $white;
 
   border-bottom: 1px solid $white;
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+
+    padding: 0;
+
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .promo__number {
@@ -77,6 +115,11 @@
   line-height: 60px;
 
   color: $white;
+
+  @media (max-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .promo__date,
@@ -93,18 +136,21 @@
   .promo__number {
     top: -7px;
 
+    &::before,
+    &::after {
+      font-family: $font--roboto-regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
     &::before {
       position: absolute;
       top: 10px;
       left: 27px;
 
       content: "Марта";
-
-      font-family: $font--roboto-regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 21px;
 
       color: $white;
     }
@@ -116,13 +162,29 @@
 
       content: "2019";
 
-      font-family: $font--roboto-regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 21px;
-
       color: $white;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    .promo__number {
+      top: -2px;
+
+      &::before,
+      &::after {
+        font-size: 10px;
+        line-height: 12px;
+      }
+
+      &::before {
+        top: 6px;
+        left: 15px;
+      }
+
+      &::after {
+        top: 17px;
+        left: 15px;
+      }
     }
   }
 }
@@ -150,6 +212,15 @@
 
   background-color: transparent;
   border: 4px solid $white;
+
+  @media (max-width: $desktop-width) {
+    padding: 12px;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    border-width: 2px;
+  }
 }
 
 .promo__img {
