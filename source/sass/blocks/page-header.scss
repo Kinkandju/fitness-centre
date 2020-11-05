@@ -174,9 +174,10 @@
 
   max-width: 62%;
 
+  color: $white;
+
   background-color: transparent;
   border: 4px solid $white;
-  color: $white;
 
   @media (max-width: $desktop-width) {
     position: relative;
