@@ -21,6 +21,17 @@
       line-height: 42px;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 67px 0 69px 0;
+
+    h2 {
+      margin: 0 0 25px 0;
+
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
 }
 
 .season-tickets__list {
@@ -44,6 +55,12 @@
 
     min-width: 332px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto 35px auto;
+
+    min-width: 290px;
+  }
 }
 
 .season-tickets__item {
@@ -56,6 +73,10 @@
 
   @media (max-width: $desktop-width) {
     margin: 0 16.5% 0 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 15.5% 0 0;
   }
 }
 
@@ -88,6 +109,11 @@
   @media (max-width: $desktop-width) {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -130,6 +156,19 @@
   @media (max-width: $desktop-width) {
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    h3 {
+      margin: 0 0 10px 0;
+
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    p {
+      margin: 0 0 53px 0;
+    }
   }
 }
 
@@ -207,6 +246,11 @@
       margin: 0;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 35px 0;
+    padding: 51px 0 54px 0;
+  }
 }
 
 .season-tickets__group {
@@ -214,6 +258,10 @@
   left: 3px;
 
   margin: 0 0 34px 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 30px 0;
+  }
 }
 
 .season-tickets__cost {
@@ -243,6 +291,18 @@
 
     z-index: -1;
   }
+
+  @media (max-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 72px;
+
+    &::before {
+      right: -10px;
+
+      font-size: 80px;
+      line-height: 120px;
+    }
+  }
 }
 
 .season-tickets__ruble {
@@ -253,6 +313,14 @@
   line-height: 90px;
 
   color: $blue;
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    right: 3px;
+
+    font-size: 48px;
+    line-height: 72px;
+  }
 }
 
 .season-tickets__link {
@@ -277,5 +345,9 @@
 
   @media (max-width: $desktop-width) {
     width: 48%;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 71.5%;
   }
 }
