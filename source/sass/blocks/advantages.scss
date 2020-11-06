@@ -1,3 +1,74 @@
 .advantages {
+  margin: 0;
+  padding: 115px 0 0 0;
+
   background-color: $light-gray;
+
+  h2 {
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  h3 {
+    font-family: $font--roboto-bold;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: $blue;
+  }
+
+  p {
+    font-family: $font--roboto-light;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $blue;
+  }
+}
+
+.advantages__space-and-parking,
+.advantages__comfort-and-experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.advantages__space,
+.advantages__parking,
+.advantages__comfort,
+.advantages__experience {
+  width: 100%;
+  max-width: 340px;
+}
+
+.advantages__space,
+.advantages__parking {
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+}
+
+.advantages__trainers {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 240px;
+
+  background-color: $intensive-blue;
+
+  h3,
+  p {
+    color: $white;
+  }
+}
+
+.advantages__number {
+  font-family: $font--roboto-bold;
+  font-size: 74px;
+  line-height: 111px;
 }
