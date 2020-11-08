@@ -30,6 +30,25 @@
 
     color: $blue;
   }
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+    padding: 97px 0 93px 0;
+
+    h2 {
+      margin: 0 0 45px 0;
+
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    h3 {
+      margin: 0 0 3px 0;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }
 
 .advantages__group {
@@ -46,8 +65,18 @@
   justify-content: space-between;
 }
 
+.advantages__space-and-parking {
+  @media (max-width: $desktop-width) {
+    margin: 0 0 43px 0;
+  }
+}
+
 .advantages__comfort-and-experience {
   margin: -152px 0 0 0;
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .advantages__space,
@@ -60,24 +89,45 @@
 
   width: 100%;
   max-width: 340px;
+
+  @media (max-width: $desktop-width) {
+    max-width: 48%;
+  }
 }
 
 .advantages__space,
 .advantages__parking {
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+
+  @media (max-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .advantages__space {
   margin: 0 15% 0 0;
   padding: 0 0 76px 2.8%;
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+    padding: 0 25px 0 0;
+  }
 }
 
 .advantages__parking {
   padding: 0 0 76px 0.2%;
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .advantages__experience {
   padding: 74px 0 0 0.3%;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 0 0 0.3%;
+  }
 }
 
 .advantages__space,
@@ -87,15 +137,27 @@
   p {
     margin: 0;
   }
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .advantages__comfort {
   padding: 74px 0 0 2%;
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .advantages__parking,
 .advantages__experience {
   margin: 0 0 0 15%;
+
+  @media (max-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .advantages__trainers {
@@ -133,6 +195,27 @@
     font-family: $font--roboto-bold;
     font-size: 26px;
     line-height: 39px;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin: 0 auto 42px auto;
+    padding: 14px 130px 37px 130px;
+
+    max-width: 442px;
+
+    h3 {
+      top: -20px;
+
+      margin: 0;
+
+      font-size: 22px;
+      line-height: 33px;
+    }
+
+    p {
+      position: relative;
+      top: -3px;
+    }
   }
 }
 
@@ -204,6 +287,30 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/numbers/five_2x.png");
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    margin: 7px 33px 6px 0;
+
+    &--space {
+      width: 83px;
+      height: 43px;
+    }
+
+    &--parking {
+      width: 55px;
+      height: 43px;
+    }
+
+    &--comfort {
+      width: 85px;
+      height: 43px;
+    }
+
+    &--experience {
+      width: 53px;
+      height: 43px;
     }
   }
 }
