@@ -1,15 +1,19 @@
 .advantages {
   margin: 0;
-  padding: 115px 0 0 0;
+  padding: 115px 0 114px 0;
 
   background-color: $light-gray;
 
   h2 {
+    margin: 0 0 66px 0;
+
     text-align: center;
     letter-spacing: 0.04em;
   }
 
   h3 {
+    margin: 0 0 7px 0;
+
     font-family: $font--roboto-bold;
     font-size: 22px;
     line-height: 33px;
@@ -18,12 +22,21 @@
   }
 
   p {
+    margin: 0 10px 0 0;
+
     font-family: $font--roboto-light;
     font-size: 16px;
     line-height: 22px;
 
     color: $blue;
   }
+}
+
+.advantages__group {
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 1040px;
 }
 
 .advantages__space-and-parking,
@@ -33,10 +46,18 @@
   justify-content: space-between;
 }
 
+.advantages__comfort-and-experience {
+  margin: -152px 0 0 0;
+}
+
 .advantages__space,
 .advantages__parking,
 .advantages__comfort,
 .advantages__experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
   width: 100%;
   max-width: 340px;
 }
@@ -46,15 +67,45 @@
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
-.advantages__trainers {
-  position: relative;
+.advantages__space {
+  margin: 0 15% 0 0;
+  padding: 0 0 76px 2.8%;
+}
 
+.advantages__parking {
+  padding: 0 0 76px 0.2%;
+}
+
+.advantages__experience {
+  padding: 74px 0 0 0.3%;
+}
+
+.advantages__space,
+.advantages__comfort {
+  margin: 0 15% 0 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+.advantages__comfort {
+  padding: 74px 0 0 2%;
+}
+
+.advantages__parking,
+.advantages__experience {
+  margin: 0 0 0 15%;
+}
+
+.advantages__trainers {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
-  margin: 0 auto;
+  margin: -155px auto 0 auto;
+  padding: 35px 33px 60px 33px;
 
   width: 100%;
   max-width: 240px;
@@ -62,8 +113,26 @@
   background-color: $intensive-blue;
 
   h3,
-  p {
+  p,
+  span {
     color: $white;
+
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h3 {
+    position: relative;
+    top: -15px;
+
+    margin: 0 0 18px 0;
+
+    font-family: $font--roboto-bold;
+    font-size: 26px;
+    line-height: 39px;
   }
 }
 
@@ -71,4 +140,70 @@
   font-family: $font--roboto-bold;
   font-size: 74px;
   line-height: 111px;
+}
+
+.advantages__data {
+  span {
+    position: relative;
+    left: -2px;
+
+    font-family: $font--roboto-regular;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: $light-blue;
+  }
+}
+
+.advantages__img {
+  margin: 4px 33px 6px 0;
+  padding: 0;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &--space {
+    width: 102px;
+    height: 53px;
+
+    background-image: url("../img/numbers/nine_hundred_1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/numbers/nine_hundred_2x.png");
+    }
+  }
+
+  &--parking {
+    width: 67px;
+    height: 53px;
+
+    background-image: url("../img/numbers/seventy_1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/numbers/seventy_2x.png");
+    }
+  }
+
+  &--comfort {
+    width: 103px;
+    height: 53px;
+
+    background-image: url("../img/numbers/three_hundred_fifty_1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/numbers/three_hundred_fifty_2x.png");
+    }
+  }
+
+  &--experience {
+    width: 65px;
+    height: 53px;
+
+    background-image: url("../img/numbers/five_1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/numbers/five_2x.png");
+    }
+  }
 }
