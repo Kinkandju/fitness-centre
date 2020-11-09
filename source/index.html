@@ -336,10 +336,20 @@
         <h2>Отзывы</h2>
 
         <div class="feedback__group">
-          <button class="feedback__button feedback__button--left"></button>
+          <button class="feedback__button feedback__button--previous" type="button">
+            <svg width="16" height="32" viewBox="0 0 16 32">
+              <use xlink:href="img/sprite.svg#icon_arrow"></use>
+            </svg>
+          </button>
+          <button class="feedback__button feedback__button--next" type="button">
+            <svg width="16" height="32" viewBox="0 0 16 32">
+              <use xlink:href="img/sprite.svg#icon_arrow"></use>
+            </svg>
+          </button>
+        </div>
 
           <ul class="feedback__list">
-            <li>
+            <li class="feedback__item">
               <picture>
                 <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp" srcset="img/feedback_anna_1x.webp 1x, img/feedback_anna_2x.webp 2x">
@@ -353,9 +363,6 @@
               </div>
             </li>
           </ul>
-
-          <button class="feedback__button feedback__button--right"></button>
-        </div>
       </section>
     </div>
 
