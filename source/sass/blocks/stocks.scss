@@ -1,0 +1,143 @@
+.stocks {
+  margin: 0;
+  padding: 115px 0 0 0;
+
+  h2 {
+    margin: 0 0 55px 0;
+
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.04em;
+
+    text-align: center;
+  }
+}
+
+.stocks__group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stocks__best-offer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 48.3%;
+  min-height: 462px;
+
+  background-color: $red;
+}
+
+.stocks__link {
+  font-family: $font--roboto-bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: $blue;
+
+  border-bottom: 1px solid $blue;
+}
+
+.stocks__info {
+  margin: 0;
+  padding: 33px 8%;
+
+  h3,
+  span,
+  p {
+    color: $white;
+  }
+
+  span,
+  p {
+    position: relative;
+    top: -25px;
+  }
+
+  h3 {
+    font-family: $font--roboto-bold;
+    font-size: 28px;
+    line-height: 44px;
+  }
+
+  span {
+    font-family: $font--roboto-bold;
+    font-size: 70px;
+    line-height: 109px;
+  }
+
+  p {
+    height: 100%;
+    max-height: 213px;
+    // margin: 0 0 84.5% 0;
+
+    font-family: $font--roboto-regular;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .stocks__link {
+    font-size: 14px;
+    line-height: 16px;
+
+    color: $white;
+
+    border-bottom: 1px solid $white;
+  }
+}
+
+.stocks__img {
+  width: 280px;
+  height: 462px;
+
+  background-image: url("../img/athletes/sportswoman_desktop_1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/athletes/sportswoman_desktop_2x.jpg");
+  }
+}
+
+.stocks__another-offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 48.2%;
+}
+
+.stocks__another-offer {
+  margin: 0;
+  padding: 25px 27px 28px 27px;
+
+  border-style: solid;
+  border-width: 7px;
+  border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+  border-image-slice: 1;
+
+  h3 {
+    margin: 0 0 10px 0;
+
+    font-family: $font--roboto-bold;
+    font-size: 26px;
+    line-height: 26px;
+
+    color: $blue;
+  }
+
+  p {
+    margin: 0 0 68px 0;
+
+    font-family: $font--roboto-regular;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $blue;
+  }
+}
