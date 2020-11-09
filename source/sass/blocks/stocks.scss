@@ -1,6 +1,6 @@
 .stocks {
   margin: 0;
-  padding: 115px 0 0 0;
+  padding: 115px 0 60px 0;
 
   h2 {
     margin: 0 0 55px 0;
@@ -11,12 +11,28 @@
 
     text-align: center;
   }
+
+  @media (max-width: $desktop-width) {
+    padding: 97px 0 50px 0;
+
+    h2 {
+      margin: 0 0 43px 0;
+
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
 }
 
 .stocks__group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .stocks__best-offer {
@@ -28,6 +44,12 @@
   min-height: 462px;
 
   background-color: $red;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 0 30px 0;
+
+    width: 100%;
+  }
 }
 
 .stocks__link {
@@ -88,6 +110,10 @@
 
     border-bottom: 1px solid $white;
   }
+
+  @media (max-width: $desktop-width) {
+    padding: 33px 6.6%;
+  }
 }
 
 .stocks__img {
@@ -102,6 +128,17 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/athletes/sportswoman_desktop_2x.jpg");
   }
+
+  @media (max-width: $desktop-width) {
+    width: 399px;
+    height: 462px;
+
+    background-image: url("../img/athletes/sportswoman_tablet_1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/athletes/sportswoman_tablet_2x.jpg");
+    }
+  }
 }
 
 .stocks__another-offers {
@@ -110,6 +147,12 @@
   justify-content: space-between;
 
   width: 48.2%;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: row;
+
+    width: 100%;
+  }
 }
 
 .stocks__another-offer {
@@ -139,5 +182,17 @@
     line-height: 22px;
 
     color: $blue;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 47.8%;
+
+    &:first-child {
+      padding: 25px 60px 28px 27px;
+
+      p {
+        margin: 0 0 20.5% 0;
+      }
+    }
   }
 }
