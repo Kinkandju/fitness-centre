@@ -14,6 +14,19 @@
 
     color: $white;
   }
+
+  @media (max-width: $desktop-width) {
+    padding: 67px 16.9% 69px 13%;
+
+    max-width: 1199px;
+
+    h2 {
+      margin: 0 0 40px 0;
+
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
 }
 
 .free-class__form {
@@ -58,6 +71,10 @@
     &::placeholder {
       color: $white;
     }
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 44%;
   }
 }
 
