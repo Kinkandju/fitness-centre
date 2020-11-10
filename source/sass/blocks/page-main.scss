@@ -1,0 +1,14 @@
+.page-main__group {
+  background-image: linear-gradient(90deg, $blue 0%, $blue 50%, $white 50%, $white 100%);
+
+  border-top: 1px solid $blue;
+}
+
+.page-main__layout-container {
+  &--free-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
