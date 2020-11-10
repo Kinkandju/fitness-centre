@@ -24,6 +24,17 @@
       line-height: 42px;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 67px 15px 62px 15px;
+
+    h2 {
+      margin: 0 0 38px 0;
+
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
 }
 
 .contacts__group {
@@ -32,6 +43,11 @@
 
   @media (max-width: $desktop-width) {
     justify-content: space-between;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 
@@ -52,6 +68,15 @@
     &--left {
       margin: 0 47px 0 0;
       padding: 0 49px 0 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &--left {
+      margin: 0 0 18px 0;
+      padding: 0;
+
+      border: none;
     }
   }
 }

@@ -8,6 +8,10 @@
 
     border: none;
   }
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .page-main__layout-container {
@@ -22,6 +26,12 @@
     &--free-class {
       flex-direction: column;
       justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &--free-class {
+      padding: 0;
     }
   }
 }

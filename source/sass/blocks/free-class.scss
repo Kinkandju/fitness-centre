@@ -27,6 +27,17 @@
       line-height: 42px;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 67px 15px 69px 15px;
+
+    h2 {
+      margin: 0 0 41px 0;
+
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
 }
 
 .free-class__form {
@@ -40,6 +51,12 @@
     padding: 0;
 
     border: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
   }
 }
 
@@ -75,6 +92,22 @@
 
   @media (max-width: $desktop-width) {
     width: 44%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.free-class__name {
+  @media (max-width: $tablet-width) {
+    margin: 0 0 36px 0;
+  }
+}
+
+.free-class__tel {
+  @media (max-width: $tablet-width) {
+    margin: 0 0 39px 0;
   }
 }
 
