@@ -42,4 +42,12 @@ input[type="radio"].visually-hidden {
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 15px $white;
+    transition: 0.3s;
+  }
 }

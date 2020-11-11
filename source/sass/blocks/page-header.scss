@@ -42,6 +42,13 @@
     color: $white;
   }
 
+  a {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
   @media (max-width: $desktop-width) {
     &:first-child {
       margin: 0 0 20px 0;
@@ -266,6 +273,15 @@
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      border-radius: 50%;
+      box-shadow: 0 0 15px $white;
+      transition: 0.3s;
+
+      opacity: 1;
+    }
   }
 
   @media (max-width: $desktop-width) {

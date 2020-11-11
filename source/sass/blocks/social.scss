@@ -39,6 +39,11 @@
 }
 
 .social__image {
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     &--vk {
       width: 32px;

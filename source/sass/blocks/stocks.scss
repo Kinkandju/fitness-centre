@@ -85,6 +85,13 @@
   color: $intensive-blue;
 
   border-bottom: 1px solid $intensive-blue;
+
+  &:hover,
+  &:focus {
+    color: $red;
+
+    border-bottom: 1px solid $red;
+  }
 }
 
 .stocks__info {
@@ -135,6 +142,11 @@
     color: $white;
 
     border-bottom: 1px solid $white;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
   }
 
   @media (max-width: $desktop-width) {
