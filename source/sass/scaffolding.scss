@@ -1,0 +1,45 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.layout-container {
+  margin: 0 auto;
+  padding: 0 55px;
+
+  max-width: 1270px;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 15px;
+  }
+}
+
+.button {
+  font-family: $font--roboto-bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

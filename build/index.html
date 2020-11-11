@@ -26,12 +26,14 @@
         <div class="page-header__info">
           <span>Омск</span>
           <h1>Фитнес центр</h1>
+
           <ul class="page-header__list">
             <li>Тренажёрный зал</li>
             <li>Групповые занятия</li>
             <li>Кардио-зона</li>
           </ul>
-          <button class="page-header__button">Купить абонемент</button>
+
+          <button class="page-header__button button" type="button">Купить абонемент</button>
         </div>
 
         <div class="page-header__img"></div>
@@ -67,7 +69,7 @@
 
         <div class="gym__img"></div>
         <div class="gym__video">
-          <button class="gym__button"></button>
+          <button class="gym__button button" type="button"></button>
         </div>
       </section>
     </div>
@@ -142,102 +144,105 @@
           </div>
 
           <p>Ежегодные соревнования по CrossFit</p>
-          <button class="promo__button">заполнить заявку</button>
+          <button class="promo__button button" type="button">заполнить заявку</button>
         </div>
 
         <div class="promo__img"></div>
       </section>
 
-      <!-- <section class="coaches" id="coaches">
+      <section class="coaches" id="coaches">
         <h2>Тренеры</h2>
-        <div class="coaches__group">
-          <button class="coaches__button coaches__button--previous" type="button">
+
+        <div class="coaches__group coaches__group--no-js">
+          <button class="coaches__button coaches__button--previous" type="button" aria-label="Предыдущий слайд">
             <svg width="16" height="32" viewBox="0 0 16 32">
               <use xlink:href="img/sprite.svg#icon_arrow"></use>
             </svg>
           </button>
-          <button class="coaches__button coaches__button--next" type="button">
+          <button class="coaches__button coaches__button--next" type="button" aria-label="Следующий слайд">
             <svg width="16" height="32" viewBox="0 0 16 32">
               <use xlink:href="img/sprite.svg#icon_arrow"></use>
             </svg>
           </button>
         </div>
 
-        <ul class="coaches__list">
-          <li class="coaches__item">
-            <picture>
-              1х: 260px; 2x: 520px
-              <source type="image/webp" srcset="img/coach's/coach_anna_1x.webp 1x, img/coach's/coach_anna_2x.webp 2x">
-              <img class="coaches__img" src="img/coach's/coach_anna_1x.jpg" width="260" height="294" srcset="img/coach's/coach_anna_1x.jpg 1x, img/coach's/coach_anna_2x.jpg 2x" alt="Тренер Анна Павлова">
-            </picture>
-            <span class="coaches__name">Анна Павлова</span>
+        <div class="coaches__slider coaches__slider--no-js">
+          <ul class="coaches__list">
+            <li class="coaches__item">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/coach's/coach_anna_1x.webp 1x, img/coach's/coach_anna_2x.webp 2x">
+                <img class="coaches__img" src="img/coach's/coach_anna_1x.jpg" width="260" height="294" srcset="img/coach's/coach_anna_1x.jpg 1x, img/coach's/coach_anna_2x.jpg 2x" alt="Тренер Анна Павлова">
+              </picture>
+              <span class="coaches__name">Анна Павлова</span>
 
-            <div class="coaches__info info">
-              <span class="info__name">Анна Павлова</span>
-              <span class="info__sport">Pole-Dance</span>
-              <ul class="info__list">
-                <li class="info__item">Certified Level 3 Trainer</li>
-                <li class="info__item">Победитель чемпионата Европы по Pole-Dance</li>
-                <li class="info__item">Опыт — 8 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="coaches__item">
-            <picture>
-              1х: 260px; 2x: 520px
-              <source type="image/webp" srcset="img/coach's/coach_alex_1x.webp 1x, img/coach's/coach_alex_2x.webp 2x">
-              <img class="coaches__img" src="img/coach's/coach_alex_1x.jpg" width="260" height="294" srcset="img/coach's/coach_alex_1x.jpg 1x, img/coach's/coach_alex_2x.jpg 2x" alt="Тренер Алексей Лавров">
-            </picture>
-            <span class="coaches__name">Алексей Лавров</span>
+              <div class="coaches__info info">
+                <span class="info__name">Анна Павлова</span>
+                <span class="info__sport">Pole-Dance</span>
+                <ul class="info__list">
+                  <li class="info__item">Certified Level 3 Trainer</li>
+                  <li class="info__item">Победитель чемпионата Европы по Pole-Dance</li>
+                  <li class="info__item">Опыт — 8 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="coaches__item">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/coach's/coach_alex_1x.webp 1x, img/coach's/coach_alex_2x.webp 2x">
+                <img class="coaches__img" src="img/coach's/coach_alex_1x.jpg" width="260" height="294" srcset="img/coach's/coach_alex_1x.jpg 1x, img/coach's/coach_alex_2x.jpg 2x" alt="Тренер Алексей Лавров">
+              </picture>
+              <span class="coaches__name">Алексей Лавров</span>
 
-            <div class="coaches__info info">
-              <span class="info__name">Алексей Лавров</span>
-              <span class="info__sport">Body Sculpt</span>
-              <ul class="info__list">
-                <li class="info__item">Certified Level 2 Trainer</li>
-                <li class="info__item">Победитель чемпионата Омска по Body Sculpt</li>
-                <li class="info__item">Опыт — 5 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="coaches__item">
-            <picture>
-              1х: 260px; 2x: 520px
-              <source type="image/webp" srcset="img/coach's/coach_alexander_1x.webp 1x, img/coach's/coach_alexander_2x.webp 2x">
-              <img class="coaches__img" src="img/coach's/coach_alexander_1x.jpg" width="260" height="294" srcset="img/coach's/coach_alexander_1x.jpg 1x, img/coach's/coach_alexander_2x.jpg 2x" alt="Тренер Александр Пашков">
-            </picture>
-            <span class="coaches__name">Александр Пашков</span>
+              <div class="coaches__info info">
+                <span class="info__name">Алексей Лавров</span>
+                <span class="info__sport">Body Sculpt</span>
+                <ul class="info__list">
+                  <li class="info__item">Certified Level 2 Trainer</li>
+                  <li class="info__item">Победитель чемпионата Омска по Body Sculpt</li>
+                  <li class="info__item">Опыт — 5 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="coaches__item">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/coach's/coach_alexander_1x.webp 1x, img/coach's/coach_alexander_2x.webp 2x">
+                <img class="coaches__img" src="img/coach's/coach_alexander_1x.jpg" width="260" height="294" srcset="img/coach's/coach_alexander_1x.jpg 1x, img/coach's/coach_alexander_2x.jpg 2x" alt="Тренер Александр Пашков">
+              </picture>
+              <span class="coaches__name">Александр Пашков</span>
 
-            <div class="coaches__info info">
-              <span class="info__name">Александр Пашков</span>
-              <span class="info__sport">CrossFit</span>
-              <ul class="info__list">
-                <li class="info__item">Certified Level 3 Trainer</li>
-                <li class="info__item">Победитель чемпионата России по CrossFit</li>
-                <li class="info__item">Опыт — 6 лет</li>
-              </ul>
-            </div>
-          </li>
-          <li class="coaches__item">
-            <picture>
-              1х: 260px; 2x: 520px
-              <source type="image/webp" srcset="img/coach's/coach_mary_1x.webp 1x, img/coach's/coach_mary_2x.webp 2x">
-              <img class="coaches__img" src="img/coach's/coach_mary_1x.jpg" width="260" height="294" srcset="img/coach's/coach_mary_1x.jpg 1x, img/coach's/coach_mary_2x.jpg 2x" alt="Тренер Мария Кетова">
-            </picture>
-            <span class="coaches__name">Мария Кетова</span>
+              <div class="coaches__info info">
+                <span class="info__name">Александр Пашков</span>
+                <span class="info__sport">CrossFit</span>
+                <ul class="info__list">
+                  <li class="info__item">Certified Level 3 Trainer</li>
+                  <li class="info__item">Победитель чемпионата России по CrossFit</li>
+                  <li class="info__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="coaches__item">
+              <picture>
+                <!-- 1х: 260px; 2x: 520px -->
+                <source type="image/webp" srcset="img/coach's/coach_mary_1x.webp 1x, img/coach's/coach_mary_2x.webp 2x">
+                <img class="coaches__img" src="img/coach's/coach_mary_1x.jpg" width="260" height="294" srcset="img/coach's/coach_mary_1x.jpg 1x, img/coach's/coach_mary_2x.jpg 2x" alt="Тренер Мария Кетова">
+              </picture>
+              <span class="coaches__name">Мария Кетова</span>
 
-            <div class="coaches__info info">
-              <span class="info__name">Мария Кетова</span>
-              <span class="info__sport">Core First</span>
-              <ul class="info__list">
-                <li class="info__item">Certified Level 2 Trainer</li>
-                <li class="info__item">Победитель чемпионата Европы по Core First</li>
-                <li class="info__item">Опыт — 9 лет</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section> -->
+              <div class="coaches__info info">
+                <span class="info__name">Мария Кетова</span>
+                <span class="info__sport">Core First</span>
+                <ul class="info__list">
+                  <li class="info__item">Certified Level 2 Trainer</li>
+                  <li class="info__item">Победитель чемпионата Европы по Core First</li>
+                  <li class="info__item">Опыт — 9 лет</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
 
     <section class="advantages">
@@ -302,7 +307,7 @@
       </div>
     </section>
 
-    <div class="page-header__layout-container layout-container">
+    <div class="page-main__layout-container layout-container">
       <section class="stocks" id="stocks">
         <h2>Акции</h2>
 
@@ -336,12 +341,12 @@
         <h2>Отзывы</h2>
 
         <div class="feedback__group">
-          <button class="feedback__button feedback__button--previous" type="button">
+          <button class="feedback__button feedback__button--previous" type="button" aria-label="Предыдущий слайд">
             <svg width="16" height="32" viewBox="0 0 16 32">
               <use xlink:href="img/sprite.svg#icon_arrow"></use>
             </svg>
           </button>
-          <button class="feedback__button feedback__button--next" type="button">
+          <button class="feedback__button feedback__button--next" type="button" aria-label="Следующий слайд">
             <svg width="16" height="32" viewBox="0 0 16 32">
               <use xlink:href="img/sprite.svg#icon_arrow"></use>
             </svg>
@@ -385,7 +390,7 @@
                 <input type="tel" id="user_tel" name="user_tel" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7} (000) 000-00-00" maxlength="18" autocomplete="off" required="">
               </div>
 
-              <button class="free-class__button" type="submit">Отправить</button>
+              <button class="free-class__button button" type="submit">Отправить</button>
             </fieldset>
           </form>
         </section>
@@ -475,6 +480,9 @@
       </div>
     </div>
   </footer>
-</body>
 
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
 </html>
