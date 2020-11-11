@@ -15,6 +15,14 @@
   max-width: 700px;
 
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    min-width: 290px;
+  }
 }
 
 .nav__item {
@@ -34,5 +42,39 @@
 
   @media (max-width: $desktop-width) {
     margin: 0 30px 0 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    top: -20px;
+
+    margin: 0 0 21px 0;
+
+    width: 45%;
+
+    a {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &--stocks {
+      margin: 0 0 21px 55%;
+    }
+
+    &--gym {
+      order: 1;
+    }
+
+    &--season-tickets {
+      order: 3;
+    }
+
+    &--coaches {
+      order: 2;
+    }
+
+    &--calendar {
+      order: 4;
+    }
   }
 }
