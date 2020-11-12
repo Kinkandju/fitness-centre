@@ -1,0 +1,27 @@
+.list-time {
+  margin: 0 8px 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-time__item {
+  margin: 0 0 8px 0;
+  padding: 42px 11px;
+
+  width: 100%;
+  max-width: 65px;
+
+  font-family: $font--roboto-regular;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: $blue;
+  border: 2px solid $blue;
+
+  &:last-child {
+    margin: 0;
+  }
+}

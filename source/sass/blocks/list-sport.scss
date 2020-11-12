@@ -1,0 +1,35 @@
+.list-sport {
+  margin: 0 8px 0 0;
+
+  width: 13.7%;
+  max-width: 148px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.list-sport__item {
+  margin: 0 0 8px 0;
+  padding: 44px 0;
+
+  width: 100%;
+  max-width: 148px;
+
+  font-family: $font--roboto-regular;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  color: $blue;
+  background-color: $light-gray;
+
+  &:last-child {
+    margin: 0;
+  }
+}

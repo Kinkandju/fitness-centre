@@ -20,15 +20,6 @@
   <main class="main__calendar calendar">
     <div class="calendar__layout-container">
 
-      <div class="calendar__group calendar__group--time">
-        <ul class="calendar__list-time list-time">
-          <li class="list-time__item" data-time="morning">08:00</li>
-          <li class="list-time__item" data-time="midday">12:00</li>
-          <li class="list-time__item" data-time="day">18:00</li>
-          <li class="list-time__item" data-time="evening">20:00</li>
-        </ul>
-      </div>
-
       <div class="calendar__group calendar__group--day">
         <ul class="calendar__list-day list-day">
           <li class="list-day__item" data-day="monday">Понедельник</li>
@@ -41,55 +32,66 @@
         </ul>
       </div>
 
-      <div class="calendar__group calendar__group--sport">
-        <ul class="calendar__list-sport list-sport">
-          <li class="list-sport__item" data-day="monday" data-time="morning">CrossFit</li>
-          <li class="list-sport__item" data-day="monday" data-time="midday">Body Sculpt</li>
-          <li class="list-sport__item" data-day="monday" data-time="day">Functional</li>
-          <li class="list-sport__item" data-day="monday" data-time="evening">Stretching</li>
-        </ul>
+      <div class="calendar__group calendar__group--columns">
+        <div class="calendar__group calendar__group--time">
+          <ul class="calendar__list-time list-time">
+            <li class="list-time__item" data-time="morning">08:00</li>
+            <li class="list-time__item" data-time="midday">12:00</li>
+            <li class="list-time__item" data-time="day">18:00</li>
+            <li class="list-time__item" data-time="evening">20:00</li>
+          </ul>
+        </div>
 
-        <ul class="calendar__list-sport list-sport">
-          <li class="list-sport__item" data-day="tuesday" data-time="morning">Aerostretching</li>
-          <li class="list-sport__item" data-day="tuesday" data-time="midday">CrossFit</li>
-          <li class="list-sport__item" data-day="tuesday" data-time="day">Body Sculpt</li>
-          <li class="list-sport__item" data-day="tuesday" data-time="evening">Functional</li>
-        </ul>
+        <div class="calendar__group calendar__group--sport">
+          <ul class="calendar__list-sport list-sport">
+            <li class="list-sport__item" data-day="monday" data-time="morning">CrossFit</li>
+            <li class="list-sport__item" data-day="monday" data-time="midday">Body Sculpt</li>
+            <li class="list-sport__item" data-day="monday" data-time="day">Functional</li>
+            <li class="list-sport__item" data-day="monday" data-time="evening">Stretching</li>
+          </ul>
 
-        <ul class="calendar__list-sport list-sport">
-          <li class="list-sport__item" data-day="wednesday" data-time="morning">Hot Iron</li>
-          <li class="list-sport__item" data-day="wednesday" data-time="midday">Aerostretching</li>
-          <li class="list-sport__item" data-day="wednesday" data-time="day">CrossFit</li>
-          <li class="list-sport__item" data-day="wednesday" data-time="evening">Body Sculpt</li>
-        </ul>
+          <ul class="calendar__list-sport list-sport">
+            <li class="list-sport__item" data-day="tuesday" data-time="morning">Aerostretching</li>
+            <li class="list-sport__item" data-day="tuesday" data-time="midday">CrossFit</li>
+            <li class="list-sport__item" data-day="tuesday" data-time="day">Body Sculpt</li>
+            <li class="list-sport__item" data-day="tuesday" data-time="evening">Functional</li>
+          </ul>
 
-        <ul class="calendar__list-sport list-sport">
-          <li class="list-sport__item" data-day="thursday" data-time="morning">Pilates</li>
-          <li class="list-sport__item" data-day="thursday" data-time="midday">Hot Iron</li>
-          <li class="list-sport__item" data-day="thursday" data-time="day">Aerostretching</li>
-          <li class="list-sport__item" data-day="thursday" data-time="evening">CrossFit</li>
-        </ul>
+          <ul class="calendar__list-sport list-sport">
+            <li class="list-sport__item" data-day="wednesday" data-time="morning">Hot Iron</li>
+            <li class="list-sport__item" data-day="wednesday" data-time="midday">Aerostretching</li>
+            <li class="list-sport__item" data-day="wednesday" data-time="day">CrossFit</li>
+            <li class="list-sport__item" data-day="wednesday" data-time="evening">Body Sculpt</li>
+          </ul>
 
-        <ul class="calendar__list-sport list-sport">
-          <li class="list-sport__item" data-day="friday" data-time="morning">Stretching</li>
-          <li class="list-sport__item" data-day="friday" data-time="midday">Pilates</li>
-          <li class="list-sport__item" data-day="friday" data-time="day">Hot Iron</li>
-          <li class="list-sport__item" data-day="friday" data-time="evening">Aerostretching</li>
-        </ul>
+          <ul class="calendar__list-sport list-sport">
+            <li class="list-sport__item" data-day="thursday" data-time="morning">Pilates</li>
+            <li class="list-sport__item" data-day="thursday" data-time="midday">Hot Iron</li>
+            <li class="list-sport__item" data-day="thursday" data-time="day">Aerostretching</li>
+            <li class="list-sport__item" data-day="thursday" data-time="evening">CrossFit</li>
+          </ul>
 
-        <ul class="calendar__list-sport list-sport">
-          <li class="list-sport__item" data-day="saturday" data-time="morning">Functional</li>
-          <li class="list-sport__item" data-day="saturday" data-time="midday">Stretching</li>
-          <li class="list-sport__item" data-day="saturday" data-time="day">Pilates</li>
-          <li class="list-sport__item" data-day="saturday" data-time="evening">Hot Iron</li>
-        </ul>
+          <ul class="calendar__list-sport list-sport">
+            <li class="list-sport__item" data-day="friday" data-time="morning">Stretching</li>
+            <li class="list-sport__item" data-day="friday" data-time="midday">Pilates</li>
+            <li class="list-sport__item" data-day="friday" data-time="day">Hot Iron</li>
+            <li class="list-sport__item" data-day="friday" data-time="evening">Aerostretching</li>
+          </ul>
 
-        <ul class="calendar__list-sport list-sport">
-          <li class="list-sport__item" data-day="sunday" data-time="morning">Body Sculpt</li>
-          <li class="list-sport__item" data-day="sunday" data-time="midday">Functional</li>
-          <li class="list-sport__item" data-day="sunday" data-time="day">Stretching</li>
-          <li class="list-sport__item" data-day="sunday" data-time="evening">Pilates</li>
-        </ul>
+          <ul class="calendar__list-sport list-sport">
+            <li class="list-sport__item" data-day="saturday" data-time="morning">Functional</li>
+            <li class="list-sport__item" data-day="saturday" data-time="midday">Stretching</li>
+            <li class="list-sport__item" data-day="saturday" data-time="day">Pilates</li>
+            <li class="list-sport__item" data-day="saturday" data-time="evening">Hot Iron</li>
+          </ul>
+
+          <ul class="calendar__list-sport list-sport">
+            <li class="list-sport__item" data-day="sunday" data-time="morning">Body Sculpt</li>
+            <li class="list-sport__item" data-day="sunday" data-time="midday">Functional</li>
+            <li class="list-sport__item" data-day="sunday" data-time="day">Stretching</li>
+            <li class="list-sport__item" data-day="sunday" data-time="evening">Pilates</li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>

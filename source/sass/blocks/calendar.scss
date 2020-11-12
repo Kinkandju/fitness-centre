@@ -1,0 +1,35 @@
+.calendar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.calendar__layout-container {
+  margin: 0 auto;
+  padding: 0 55px;
+
+  width: 100%;
+  max-width: 1270px;
+}
+
+.calendar__group {
+  &--columns,
+  &--sport {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &--sport {
+    width: 100%;
+  }
+}
+
+.calendar__list-time,
+.calendar__list-day,
+.calendar__list-sport {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
