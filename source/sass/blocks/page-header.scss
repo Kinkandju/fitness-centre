@@ -28,7 +28,7 @@
   align-items: flex-end;
 
   span,
-  a {
+  .page-header__link {
     margin: 0;
     padding: 0;
 
@@ -42,7 +42,7 @@
     color: $white;
   }
 
-  a {
+  .page-header__link {
     &:hover,
     &:focus {
       opacity: 0.5;
@@ -55,7 +55,7 @@
     }
 
     span,
-    a {
+    .page-header__link {
       font-size: 24px;
       line-height: 24px;
     }
@@ -67,7 +67,7 @@
     }
 
     span,
-    a {
+    .page-header__link {
       font-size: 20px;
       line-height: 20px;
     }
@@ -265,7 +265,7 @@
     }
   }
 
-  a {
+  .page-header__link {
     margin: 0;
     padding: 0;
 

@@ -18,8 +18,8 @@
   <header class="page-header">
     <div class="page-header__layout-container layout-container">
       <div class="page-header__group">
-        <a href="#" aria-label="Логотип компании">Supergym</a>
-        <a href="tel:+78005555555" aria-label="Телефон компании">8-800-555-55-55</a>
+        <a class="page-header__link" href="#" aria-label="Логотип компании">Supergym</a>
+        <a class="page-header__link" href="tel:+78005555555" aria-label="Телефон компании">8-800-555-55-55</a>
       </div>
 
       <div class="page-header__group">
@@ -33,20 +33,20 @@
             <li>Кардио-зона</li>
           </ul>
 
-          <button class="page-header__button button" type="button">Купить абонемент</button>
+          <a class="page-header__button button" href="#season-tickets">Купить абонемент</a>
         </div>
 
         <div class="page-header__img"></div>
 
         <ul class="page-header__social">
           <li>
-            <a href="#">fb</a>
+            <a class="page-header__link" href="#">fb</a>
           </li>
           <li>
-            <a href="#">vk</a>
+            <a class="page-header__link" href="#">vk</a>
           </li>
           <li>
-            <a href="#">ig</a>
+            <a class="page-header__link" href="#">ig</a>
           </li>
         </ul>
       </div>
@@ -80,17 +80,17 @@
 
         <ul class="season-tickets__list">
           <li class="season-tickets__item">
-            <span class="season-tickets__time season-tickets__time--active">1 месяц</span>
+            <button class="season-tickets__time season-tickets__time--active" type="button">1 месяц</button>
           </li>
           <li class="season-tickets__item">
-            <span class="season-tickets__time">6 месяцев</span>
+            <button class="season-tickets__time season-tickets__time--six-months" type="button">6 месяцев</button>
           </li>
           <li class="season-tickets__item">
-            <span class="season-tickets__time">12 месяцев</span>
+            <button class="season-tickets__time season-tickets__time--twelve-months" type="button">12 месяцев</button>
           </li>
         </ul>
 
-        <ul class="season-tickets__list-with-description">
+        <ul class="season-tickets__list-with-description season-tickets__list-with-description--month">
           <li class="season-tickets__item-description">
             <h3>С тренером</h3>
             <p>12 занятий</p>
@@ -114,6 +114,66 @@
             <p>с 8:00 до 22:00</p>
             <div class="season-tickets__group">
               <span class="season-tickets__cost" data-cost="2700">2700</span>
+              <span class="season-tickets__ruble">₽</span>
+            </div>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+
+        <ul class="season-tickets__list-with-description season-tickets__list-with-description--six-months season-tickets__list-with-description--no-js">
+          <li class="season-tickets__item-description">
+            <h3>С тренером</h3>
+            <p>72 занятия</p>
+            <div class="season-tickets__group">
+              <span class="season-tickets__cost" data-cost="15000">15000</span>
+              <span class="season-tickets__ruble">₽</span>
+            </div>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
+          </li>
+          <li class="season-tickets__item-description">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <div class="season-tickets__group">
+              <span class="season-tickets__cost" data-cost="9500">9500</span>
+              <span class="season-tickets__ruble">₽</span>
+            </div>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
+          </li>
+          <li class="season-tickets__item-description">
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <div class="season-tickets__group">
+              <span class="season-tickets__cost" data-cost="11000">11000</span>
+              <span class="season-tickets__ruble">₽</span>
+            </div>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+
+        <ul class="season-tickets__list-with-description season-tickets__list-with-description--twelve-months season-tickets__list-with-description--no-js">
+          <li class="season-tickets__item-description">
+            <h3>С тренером</h3>
+            <p>144 занятия</p>
+            <div class="season-tickets__group">
+              <span class="season-tickets__cost" data-cost="28000">28000</span>
+              <span class="season-tickets__ruble">₽</span>
+            </div>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
+          </li>
+          <li class="season-tickets__item-description">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <div class="season-tickets__group">
+              <span class="season-tickets__cost" data-cost="18000">18000</span>
+              <span class="season-tickets__ruble">₽</span>
+            </div>
+            <a class="season-tickets__link" href="#">Купить абонемент</a>
+          </li>
+          <li class="season-tickets__item-description">
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <div class="season-tickets__group">
+              <span class="season-tickets__cost" data-cost="22000">22000</span>
               <span class="season-tickets__ruble">₽</span>
             </div>
             <a class="season-tickets__link" href="#">Купить абонемент</a>

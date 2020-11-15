@@ -1,4 +1,6 @@
 .season-tickets {
+  position: relative;
+
   margin: 0;
   padding: 115px 0 85px 0;
 
@@ -20,6 +22,25 @@
     color: $blue;
   }
 
+  &::after {
+    position: absolute;
+    bottom: -17.5%;
+    right: -13.5%;
+
+    width: 470px;
+    height: 494px;
+
+    content: "";
+
+    background-image: url("../img/plate_1x.png");
+    background-size: 470px 494px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/plate_2x.png");
+    }
+  }
+
   @media (max-width: $desktop-width) {
     padding: 98px 0 100px 0;
 
@@ -28,6 +49,16 @@
 
       font-size: 42px;
       line-height: 42px;
+    }
+
+    &::after {
+      bottom: -7.7%;
+      right: -10.9%;
+
+      width: 438px;
+      height: 462px;
+
+      background-size: 438px 462px;
     }
   }
 
@@ -40,6 +71,10 @@
       font-size: 32px;
       line-height: 32px;
     }
+
+    &::after {
+      background-image: none;
+    }
   }
 }
 
@@ -50,7 +85,7 @@
   flex-wrap: wrap;
 
   margin: 0 auto 40px auto;
-  padding: 0 0 10px 0;
+  padding: 0;
 
   width: 29.4%;
   min-width: 341px;
@@ -73,19 +108,19 @@
 }
 
 .season-tickets__item {
-  margin: 0 13.5% 0 0;
+  margin: 0 13.5% -2px 0;
   padding: 0;
 
   &:nth-child(3n) {
-    margin: 0;
+    margin: 0 0 -2px 0;
   }
 
   @media (max-width: $desktop-width) {
-    margin: 0 16.5% 0 0;
+    margin: 0 16.5% -2px 0;
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0 15.5% 0 0;
+    margin: 0 15.5% -2px 0;
   }
 }
 
@@ -158,6 +193,15 @@
     line-height: 24px;
 
     color: $moderate-blue;
+  }
+
+  &--six-months,
+  &--twelve-months {
+    display: none;
+  }
+
+  &--no-js {
+    display: flex;
   }
 
   @media (max-width: $desktop-width) {
