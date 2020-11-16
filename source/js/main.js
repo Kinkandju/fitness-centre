@@ -76,4 +76,65 @@
 
   isButtonActive(seasonTickets);
 
+  function getScroll() {
+    var linkAnchors = document.querySelectorAll('.page-header__button, .nav__link--gym, .nav__link--season-tickets, .nav__link--stocks, .nav__link--coaches');
+
+    for (var i = 0; i < linkAnchors.length; i++) {
+      linkAnchors[i].addEventListener('click', function (evt) {
+        evt.preventDefault();
+
+        var targetElement = document.querySelector(evt.currentTarget.href.replace(/[^#]*(.*)/, '$1'));
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf('MSIE ');
+        var trident = ua.indexOf('Trident/');
+
+        function isInternetExplorer() {
+          return msie > -1 || trident > -1;
+        }
+
+        var targetY;
+
+        if (isInternetExplorer() === false) {
+          targetY = targetElement.getBoundingClientRect().y;
+        } else {
+          targetY = targetElement.getBoundingClientRect().top;
+        }
+
+        var startY = window.pageYOffset;
+        var data = {
+          duration: 1800,
+          timing: function (timeFraction) {
+            return timeFraction;
+          },
+          draw: function (progress) {
+            window.scrollTo(0, startY + progress * targetY);
+          }
+        };
+
+        function getScrollSpeed(object) {
+          var start = performance.now();
+
+          requestAnimationFrame(function animate(time) {
+            var timePart = (time - start) / object.duration;
+
+            if (timePart > 1) {
+              timePart = 1;
+            }
+
+            var progress = object.timing(timePart);
+            object.draw(progress);
+
+            if (timePart < 1) {
+              requestAnimationFrame(animate);
+            }
+          });
+        }
+
+        getScrollSpeed(data);
+      });
+    }
+  }
+
+  getScroll();
+
 })();

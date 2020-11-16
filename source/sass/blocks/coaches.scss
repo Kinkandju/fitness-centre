@@ -3,7 +3,7 @@
   padding: 55px 0 80px 0;
 
   h2 {
-    margin: 0 0 18px 0;
+    margin: 0 0 17px 0;
     padding: 0;
 
     font-family: $font--bebasneue-regular;
@@ -115,7 +115,7 @@
   margin: 0 -60px;
 
   &--no-js {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 
