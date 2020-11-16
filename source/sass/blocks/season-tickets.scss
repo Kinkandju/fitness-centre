@@ -24,8 +24,8 @@
 
   &::after {
     position: absolute;
-    bottom: -17.5%;
-    right: -13.5%;
+    bottom: -17.6%;
+    right: 4.4%;
 
     width: 470px;
     height: 494px;
@@ -126,7 +126,7 @@
 
 .season-tickets__time {
   margin: 0;
-  padding: 0 0 12.5px 0;
+  padding: 0 0 10px 0;
 
   height: 100%;
 
@@ -195,9 +195,12 @@
     color: $moderate-blue;
   }
 
-  &--six-months,
-  &--twelve-months {
+  &--hidden {
     display: none;
+  }
+
+  &--active {
+    display: flex;
   }
 
   &--no-js {
