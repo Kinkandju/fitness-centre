@@ -246,23 +246,21 @@
   width: 660px;
   height: 500px;
 
-  background-image: url("../img/athletes/sportsman2_desktop_1x.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  img {
+    width: 660px;
+    height: 500px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/athletes/sportsman2_desktop_2x.jpg");
+    object-fit: cover;
+    object-position: center center;
   }
 
   @media (max-width: $desktop-width) {
     width: 386px;
     height: 292px;
 
-    background-image: url("../img/athletes/sportsman2_tablet_1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/athletes/sportsman2_tablet_2x.jpg");
+    img {
+      width: 386px;
+      height: 292px;
     }
   }
 
@@ -271,10 +269,9 @@
     min-width: 290px;
     height: 292px;
 
-    background-image: url("../img/athletes/sportsman2_mobil_1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/athletes/sportsman2_mobil_2x.jpg");
+    img {
+      width: 100%;
+      height: 292px;
     }
   }
 }
