@@ -36,7 +36,17 @@
           <a class="page-header__button button" href="#season-tickets">Купить абонемент</a>
         </div>
 
-        <div class="page-header__img"></div>
+        <div class="page-header__img">
+          <picture>
+            <!-- 1х: 500px; 2x: 1000px -->
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/athletes/sportsman_desktop_1x.webp, img/athletes/sportsman_desktop_2x.webp 2x">
+            <!-- 1х: 324px; 2x: 648px -->
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/athletes/sportsman_tablet_1x.webp, img/athletes/sportsman_tablet_2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/athletes/sportsman_desktop_1x.jpg, img/athletes/sportsman_desktop_2x.jpg 2x">
+            <img media="(min-width: 768px)" src="img/athletes/sportsman_tablet_1x.jpg" srcset="img/athletes/sportsman_tablet_2x.jpg 2x" width="324" height="390" alt="Изображение спортсмена">
+          </picture>
+        </div>
 
         <ul class="page-header__social">
           <li>
