@@ -72,6 +72,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    overflow: hidden;
   }
 }
 
@@ -174,26 +176,21 @@
 }
 
 .stocks__img {
+  min-width: 280px;
   width: 280px;
   height: 462px;
 
-  background-image: url("../img/athletes/sportswoman_desktop_1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/athletes/sportswoman_desktop_2x.jpg");
-  }
+  object-fit: cover;
+  object-position: center;
 
   @media (max-width: $desktop-width) {
-    width: 399px;
-    height: 462px;
+    min-width: 399px;
 
-    background-image: url("../img/athletes/sportswoman_tablet_1x.jpg");
+    img {
+      width: 399px;
+      height: 462px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/athletes/sportswoman_tablet_2x.jpg");
+      object-position: right;
     }
   }
 
@@ -201,12 +198,12 @@
     width: 100%;
     height: 299px;
 
-    background-image: url("../img/athletes/sportswoman_mobil_1x.jpg");
-    background-size: cover;
-    background-position: center top;
+    img {
+      width: 100%;
+      height: 299px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/athletes/sportswoman_mobil_2x.jpg");
+      object-fit: cover;
+      object-position: center top;
     }
   }
 }

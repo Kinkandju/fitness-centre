@@ -379,7 +379,20 @@
               <p>Безлимитный абонемент<br>в тренажерный зал</p>
               <a class="stocks__link" href="#">подробнее</a>
             </div>
-            <div class="stocks__img"></div>
+            <div class="stocks__img">
+              <picture>
+                <!-- 1х: 280px; 2x: 560px -->
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/athletes/sportswoman_desktop_1x.webp, img/athletes/sportswoman_desktop_2x.webp 2x">
+                  <!-- 1х: 399px; 2x: 798px -->
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/athletes/sportswoman_tablet_1x.webp, img/athletes/sportswoman_tablet_2x.webp 2x">
+                  <!-- 1х: 290px; 2x: 580px -->
+                <source type="image/webp" srcset="img/athletes/sportswoman_mobil_1x.webp, img/athletes/sportswoman_mobil_2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/athletes/sportswoman_desktop_1x.jpg, img/athletes/sportswoman_desktop_2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/athletes/sportswoman_tablet_1x.jpg, img/athletes/sportswoman_tablet_2x.jpg 2x">
+                <img src="img/athletes/sportswoman_mobil_1x.jpg" srcset="img/athletes/sportswoman_mobil_2x.jpg 2x" width="290" height="299" alt="Спортсменка">
+              </picture>
+            </div>
           </div>
 
           <div class="stocks__another-offers">
