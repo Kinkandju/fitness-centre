@@ -92,7 +92,7 @@
 
   list-style: none;
 
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  border-bottom: 2px solid $light-transparent-gray;
 
   @media (max-width: $desktop-width) {
     margin: 0 auto 44px auto;
@@ -142,7 +142,7 @@
   cursor: pointer;
 
   border: none;
-  background-color: transparent;
+  background-color: $transparent;
 
   &--active {
     color: $blue;
@@ -391,7 +391,7 @@
   color: $blue;
 
   border: 2px solid $blue;
-  background-color: transparent;
+  background-color: $transparent;
 
   @media (max-width: $desktop-width) {
     width: 48%;

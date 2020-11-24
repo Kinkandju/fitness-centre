@@ -140,7 +140,7 @@
 
 .advantages__space,
 .advantages__parking {
-  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  border-bottom: 2px solid $transparent-crimson;
 
   @media (max-width: $desktop-width) {
     border: none;

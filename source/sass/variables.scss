@@ -10,9 +10,11 @@ $font--roboto-light: "RobotoCondensed-Light", "Arial", sans-serif;
 $font--roboto-regular: "RobotoCondensed-Regular", "Arial", sans-serif;
 $font--roboto-bold: "RobotoCondensed-Bold", "Arial", sans-serif;
 
+$transparent: transparent;
 $white: rgba(255, 255, 255, 1);
 $light-gray: rgba(248, 249, 252, 1);
 $transparent-gray: rgba(232, 232, 232, 0.5);
+$light-transparent-gray: rgba(120, 120, 120, 0.2);
 $gray: rgba(175, 175, 175, 1);
 $silver: rgba(182, 189, 204, 1);
 $blue: rgba(16, 38, 84, 1);
@@ -27,3 +29,4 @@ $dark-blue: rgba(3, 10, 26, 1);
 $red: rgba(237, 2, 51, 1);
 $deep-red: rgba(152, 10, 55, 1);
 $crimson: rgba(209, 10, 66, 1);
+$transparent-crimson: rgba(209, 10, 66, 0.2);

@@ -189,7 +189,7 @@
 
   color: $white;
 
-  background-color: transparent;
+  background-color: $transparent;
   border: 4px solid $white;
 
   @media (max-width: $desktop-width) {
