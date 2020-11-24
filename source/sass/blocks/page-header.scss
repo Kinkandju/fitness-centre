@@ -17,7 +17,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 18px 0 55px 0;
+    padding: 18px 0 58px 0;
   }
 }
 
@@ -63,7 +63,7 @@
 
   @media (max-width: $tablet-width) {
     &:first-child {
-      margin: 0 0 75px 0;
+      margin: 0 0 72px 0;
     }
 
     span,
@@ -76,13 +76,11 @@
 
 .page-header__info {
   position: relative;
-  top: -46px;
-  left: 19px;
 
   display: flex;
   flex-direction: column;
 
-  margin: 0 26px 0 0;
+  margin: 0 26px 46px 19px;
 
   width: 40%;
   max-width: 377px;
@@ -113,8 +111,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    top: -3px;
-    left: 0;
+    margin: 0 30px 3px 0;
 
     width: 47.8%;
 
@@ -213,6 +210,7 @@
 .page-header__img {
   position: relative;
   top: -3px;
+  left: -10px;
 
   width: 48%;
   max-width: 500px;
@@ -227,6 +225,7 @@
 
   @media (max-width: $desktop-width) {
     top: 0;
+    left: 0;
 
     width: 324px;
     height: 390px;
@@ -243,14 +242,11 @@
 }
 
 .page-header__social {
-  position: relative;
-  top: -45px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 
-  margin: 0;
+  margin: 0 0 45px 0;
   padding: 0;
 
   width: 12%;
