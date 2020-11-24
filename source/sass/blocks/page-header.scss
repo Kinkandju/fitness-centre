@@ -21,6 +21,31 @@
   }
 }
 
+.page-header__calendar {
+  margin: 0;
+  padding: 110px 0 52px 0;
+
+  background-color: $white;
+  background-image: none;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+
+    font-family: $font--bebasneue-regular;
+    font-size: 49px;
+    line-height: 49px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: $blue;
+  }
+}
+
+
 .page-header__group {
   display: flex;
   flex-direction: row;
