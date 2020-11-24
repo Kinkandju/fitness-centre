@@ -135,9 +135,21 @@
 
   color: $white;
 
+  &:first-child {
+    top: -8px;
+
+    margin: 0 6px 0 0;
+  }
+
   @media (max-width: $desktop-width) {
     font-size: 24px;
     line-height: 36px;
+
+    &:first-child {
+      top: -2px;
+
+      margin: 0 4px 0 0;
+    }
   }
 }
 
@@ -151,60 +163,41 @@
   justify-content: flex-start;
 }
 
-.promo__date {
-  .promo__number {
-    top: -7px;
+.promo__number-group {
+  display: flex;
+  flex-direction: row;
+}
 
-    &::before,
-    &::after {
-      font-family: $font--roboto-regular;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 21px;
-    }
+.promo__month-and-year {
+  display: flex;
+  flex-direction: column;
+}
 
-    &::before {
-      position: absolute;
-      top: 10px;
-      left: 27px;
+.promo__month,
+.promo__year {
+  font-family: $font--roboto-regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 
-      content: "Марта";
-
-      color: $white;
-    }
-
-    &::after {
-      position: absolute;
-      top: 27px;
-      left: 27px;
-
-      content: "2019";
-
-      color: $white;
-    }
-  }
+  color: $white;
 
   @media (max-width: $desktop-width) {
-    .promo__number {
-      top: -2px;
+    position: relative;
+    top: 4px;
 
-      &::before,
-      &::after {
-        font-size: 10px;
-        line-height: 12px;
-      }
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
 
-      &::before {
-        top: 6px;
-        left: 15px;
-      }
+.promo__month {
+  position: relative;
+  top: 2px;
 
-      &::after {
-        top: 17px;
-        left: 15px;
-      }
-    }
+  @media (max-width: $desktop-width) {
+    top: 4px;
   }
 }
 
