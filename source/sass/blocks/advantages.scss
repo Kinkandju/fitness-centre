@@ -149,32 +149,33 @@
 
 .advantages__space,
 .advantages__comfort {
-  margin: 0 15% 0 0;
+  margin: 0;
 
   p {
     margin: 0;
   }
 
-  @media (max-width: $desktop-width) {
-    margin: 0;
-  }
+  // @media (max-width: $desktop-width) {
+  //   margin: 0;
+  // }
 }
 
 .advantages__parking,
 .advantages__experience {
-  margin: 0 0 0 15%;
+  margin: 0;
 
-  @media (max-width: $desktop-width) {
-    margin: 0;
-  }
+  // @media (max-width: $desktop-width) {
+  //   margin: 0;
+  // }
 }
 
 .advantages__space {
-  margin: 0 15% 0 0;
+  // margin: 0 15% 0 0;
+  margin: 0;
   padding: 0 0 76px 2.8%;
 
   @media (max-width: $desktop-width) {
-    margin: 0;
+    // margin: 0;
     padding: 0 25px 0 0;
   }
 

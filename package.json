@@ -50,6 +50,7 @@
   "engines": {
     "node": "8.15"
   },
+  "type": "module",
   "dependencies": {
     "del": "^4.1.1"
   }

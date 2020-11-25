@@ -1,6 +1,35 @@
 'use strict';
 
 (function () {
+
+  new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 30
+      },
+      1200: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 40
+      }
+    }
+  });
+
   var maskedInputs = document.querySelectorAll('input[data-inputmask]');
 
   var applyMask = function () {
@@ -136,5 +165,52 @@
   }
 
   getScroll();
+
+  // var position = 0;
+  // var slidesToShow = 4;
+  // var slidesToScroll = 4;
+  // var slider = document.querySelector('.coaches__slider');
+  // var track = document.querySelector('.coaches__list');
+  // var items = document.querySelectorAll('.coaches__item');
+  // var itemsCount = items.lenght;
+  // var btnPrev = document.querySelector('.coaches__button--previous');
+  // var btnNext = document.querySelector('.coaches__button--next');
+  //
+  // var itemWidth = slider.clientWidth / slidesToShow;
+  // var movePosition = slidesToScroll * itemWidth;
+  //
+  // items.forEach(function (item) {
+  //   item.style.minWidth = (itemWidth - 30) + 'px';
+  // });
+  //
+  // btnNext.addEventListener('click', function () {
+  //   var itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+  //
+  //   position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+  //
+  //   setPosition();
+  //   checkBtns();
+  // });
+  //
+  // btnPrev.addEventListener('click', function () {
+  //   var itemsLeft = Math.abs(position) / itemWidth;
+  //
+  //   position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+  //
+  //   setPosition();
+  //   checkBtns();
+  // });
+  //
+  // var setPosition = function () {
+  //   track.style.transform = translateX(position) + 'px';
+  // };
+  //
+  // var checkBtns = function () {
+  //   btnPrev.disabled = position === 0;
+  //   btnNext.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
+  // };
+  //
+  // checkBtns();
+
 
 })();
