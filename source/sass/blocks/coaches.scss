@@ -48,18 +48,7 @@
   margin: 0 auto;
   padding: 0;
 
-  // width: 100%;
-  // min-width: 320px;
-  //
   box-sizing: border-box;
-  //
-  // &--no-js {
-  //   overflow: hidden;
-  //
-  //   .coaches__list {
-  //     flex-wrap: nowrap;
-  //   }
-  // }
 
   overflow: hidden;
 
@@ -76,20 +65,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  // justify-content: flex-start;
-  // flex-wrap: wrap;
-
-  transition-property: transform;
-
-  // transition: 0.5s;
-
-  width: 100%;
-  height: 100%;
 
   margin: 0;
   padding: 0;
 
+  width: 100%;
+  height: 100%;
+
+  transition-property: transform;
+
   list-style: none;
+
+  &--no-js {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 .coaches__item {
@@ -102,15 +92,16 @@
 
   transition-property: transform;
 
-  // margin: 0 40px 40px 0;
+  // margin: 0 40px 0 0;
   padding: 22px;
 
   width: 100%;
+  max-width: 260px;
   height: 294px;
 
-  &:nth-child(4n) {
-    // margin: 0 0 40px 0;
-  }
+  // &:nth-child(4n) {
+  //   margin: 0;
+  // }
 
   &:hover {
     padding: 0;
@@ -123,6 +114,14 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+    }
+  }
+
+  &--no-js {
+    margin: 0 1.5% 40px 0;
+
+    &:nth-child(4n) {
+      margin: 0 0 40px 0;
     }
   }
 

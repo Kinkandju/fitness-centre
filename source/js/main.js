@@ -2,6 +2,14 @@
 
 (function () {
 
+  var coachesGroup = document.querySelector('.coaches__group');
+  var coachesList = document.querySelector('.coaches__list');
+  var coachesItems = document.querySelectorAll('.coaches__item');
+
+  removeClassList(coachesGroup, 'coaches__group--no-js');
+  removeClassList(coachesList, 'coaches__list--no-js');
+  removeClassJs(coachesItems, 'coaches__item--no-js');
+
   new Swiper('.swiper-container', {
     navigation: {
       nextEl: '.coaches__button--next',
