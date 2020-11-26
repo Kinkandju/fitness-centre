@@ -1,14 +1,17 @@
 .info {
   margin: 0;
-  padding: 52px 40px 52px 40px;
+  padding: 52px 40px;
 
   width: 100%;
-  max-width: 260px;
   height: 100%;
 
-  background-color: rgba(16, 38, 84, 0.9);
+  background-color: $deep-azure;
 
   display: none;
+
+  @media (max-width: $tablet-width) {
+    padding: 35px 25px 35px 20px;
+  }
 }
 
 .info__name {

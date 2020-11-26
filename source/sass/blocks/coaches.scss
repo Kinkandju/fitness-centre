@@ -16,15 +16,37 @@
 
     color: $blue;
   }
+
+  @media (max-width: $desktop-width) {
+    padding: 37px 0 100px 0;
+
+    h2 {
+      margin: 0 0 5px 0;
+
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: 0.04em;
+
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 37px 0 70px 0;
+
+    h2 {
+      margin: 0 0 20px 0;
+
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.03em;
+    }
+  }
 }
 
 .coaches__slider {
   margin: 0 auto;
   padding: 0;
-
-  width: 100%;
-  max-width: 1270px;
-  min-width: 320px;
 
   // width: 100%;
   // min-width: 320px;
@@ -40,17 +62,29 @@
   // }
 
   overflow: hidden;
+
+  @media (max-width: $desktop-width) {
+    width: 566px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 226px;
+  }
 }
 
 .coaches__list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   // justify-content: flex-start;
   // flex-wrap: wrap;
 
-  transition: 0.2s;
+  transition-property: transform;
+
+  // transition: 0.5s;
 
   width: 100%;
+  height: 100%;
 
   margin: 0;
   padding: 0;
@@ -64,13 +98,14 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  flex-shrink: 0;
+
+  transition-property: transform;
 
   // margin: 0 40px 40px 0;
   padding: 22px;
 
-  // width: 100%;
-  // max-width: 260px;
-  min-width: 260px;
+  width: 100%;
   height: 294px;
 
   &:nth-child(4n) {
@@ -90,21 +125,30 @@
       justify-content: flex-start;
     }
   }
+
+  @media (max-width: $desktop-width) {
+    min-width: 268px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-width: 226px;
+    height: 274px;
+  }
 }
 
 .coaches__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  object-fit: cover;
-  object-position: center;
-  z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
 }
 
 .coaches__name {
@@ -124,10 +168,20 @@
   justify-content: space-between;
   align-items: center;
 
-  margin: 0 -60px;
+  margin: 0 -63px;
 
   &--no-js {
     visibility: hidden;
+  }
+
+  @media (max-width: $desktop-width) {
+    margin: 0 auto;
+
+    max-width: 700px;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 320px;
   }
 }
 
@@ -145,6 +199,33 @@
   }
 
   &--next {
+    top: -4px;
+
     transform: scale(-1, -1);
+  }
+
+  @media (max-width: $desktop-width) {
+    &--previous {
+      left: -7px;
+    }
+
+    &--next {
+      left: 7px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &--previous {
+      top: -16px;
+    }
+
+    &--next {
+      top: -20px;
+    }
+
+    svg {
+      width: 10px;
+      height: 19px;
+    }
   }
 }
