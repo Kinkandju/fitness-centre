@@ -548,7 +548,7 @@
       <section class="feedback">
         <h2>Отзывы</h2>
 
-        <div class="feedback__group">
+        <div class="feedback__group feedback__group--no-js">
           <button class="feedback__button feedback__button--previous" type="button" aria-label="Предыдущий слайд">
             <svg width="16" height="32" viewBox="0 0 16 32">
               <use xlink:href="img/sprite.svg#icon_arrow"></use>
@@ -561,8 +561,9 @@
           </button>
         </div>
 
-          <ul class="feedback__list">
-            <li class="feedback__item">
+        <div class="feedback__slider swiper-container">
+          <ul class="feedback__list feedback__list--no-js swiper-wrapper">
+            <li class="feedback__item feedback__item--no-js swiper-slide">
               <picture>
                 <!-- 1х: 80px; 2x: 160px -->
                 <source type="image/webp" srcset="img/feedback_anna_1x.webp 1x, img/feedback_anna_2x.webp 2x">
@@ -575,7 +576,21 @@
                 </p>
               </div>
             </li>
+            <li class="feedback__item feedback__item--no-js swiper-slide">
+              <picture>
+                <!-- 1х: 80px; 2x: 160px -->
+                <source type="image/webp" srcset="img/feedback_anna_1x.webp 1x, img/feedback_anna_2x.webp 2x">
+                <img src="img/feedback_anna_1x.png" width="80" height="80" srcset="img/feedback_anna_1x.png 1x, img/feedback_anna_2x.png 2x" alt="Фотография Анны">
+              </picture>
+              <div class="feedback__comment">
+                <span>Анна Орлова2</span>
+                <p>
+                  «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                </p>
+              </div>
+            </li>
           </ul>
+        </div>
       </section>
     </div>
 
