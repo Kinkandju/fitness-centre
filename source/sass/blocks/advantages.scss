@@ -4,6 +4,8 @@
 
   background-color: $light-gray;
 
+  overflow: hidden;
+
   h2 {
     margin: 0 0 66px 0;
     padding: 0;
@@ -82,50 +84,40 @@
   }
 }
 
-.advantages__group {
-  margin: 0 auto;
+.advantages__list {
+  position: relative;
 
-  width: 100%;
-  max-width: 1040px;
-}
-
-.advantages__space-and-parking,
-.advantages__comfort-and-experience {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 
-  @media (max-width: $tablet-width) {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}
+  margin: 0 auto;
+  padding: 0 5% 0 7.7%;
 
-.advantages__space-and-parking {
-  @media (max-width: $desktop-width) {
-    margin: 0 0 43px 0;
-  }
-}
+  width: 100%;
+  min-height: 320px;
 
-.advantages__comfort-and-experience {
-  margin: -152px 0 0 0;
+  list-style: none;
 
   @media (max-width: $desktop-width) {
-    margin: 0;
+    padding: 0 0 0 2px;
+
+    min-height: 478px;
   }
 }
 
-.advantages__space,
-.advantages__parking,
-.advantages__comfort,
-.advantages__experience {
+.advantages__item {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-self: flex-end;
 
-  width: 100%;
-  max-width: 340px;
+  width: 33.5%;
+
+  &:nth-child(-n+2) {
+    align-self: flex-start;
+  }
 
   @media (max-width: $desktop-width) {
     width: 48%;
@@ -135,58 +127,43 @@
     flex-direction: column;
 
     width: 100%;
+
+    &:nth-child(2) {
+      margin: 0 0 330px 0;
+    }
   }
 }
 
 .advantages__space,
 .advantages__parking {
-  border-bottom: 2px solid $transparent-crimson;
+  // border-bottom: 2px solid $transparent-crimson;
 
   @media (max-width: $desktop-width) {
     border: none;
   }
 }
 
-.advantages__space,
-.advantages__comfort {
-  margin: 0;
-
+.advantages__space {
   p {
-    margin: 0;
+    margin: 0 25px 0 0;
   }
 
-  // @media (max-width: $desktop-width) {
-  //   margin: 0;
-  // }
-}
-
-.advantages__parking,
-.advantages__experience {
-  margin: 0;
-
-  // @media (max-width: $desktop-width) {
-  //   margin: 0;
-  // }
-}
-
-.advantages__space {
-  // margin: 0 15% 0 0;
-  margin: 0;
-  padding: 0 0 76px 2.8%;
-
   @media (max-width: $desktop-width) {
-    // margin: 0;
     padding: 0 25px 0 0;
+
+    p {
+      margin: 0 5px 0 0;
+    }
   }
 
   @media (max-width: $tablet-width) {
     margin: 0 0 40px 0;
-    padding: 0 55px;
+    padding: 0 48px;
   }
 }
 
 .advantages__parking {
-  padding: 0 0 76px 0.2%;
+  // padding: 0 0 76px 0.2%;
 
   @media (max-width: $desktop-width) {
     padding: 0;
@@ -198,10 +175,11 @@
 }
 
 .advantages__comfort {
-  padding: 74px 0 0 2%;
+  position: relative;
+  left: -8px;
 
   @media (max-width: $desktop-width) {
-    padding: 0;
+    left: -2px;
   }
 
   @media (max-width: $tablet-width) {
@@ -211,10 +189,10 @@
 }
 
 .advantages__experience {
-  padding: 74px 0 0 0.3%;
+  // padding: 74px 0 0 0.3%;
 
   @media (max-width: $desktop-width) {
-    padding: 0 0 0 0.3%;
+    padding: 0 0 0 0.15%;
   }
 
   @media (max-width: $tablet-width) {
@@ -223,12 +201,17 @@
 }
 
 .advantages__trainers {
+  position: absolute;
+  top: 2.2%;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
-  margin: -155px auto 0 auto;
+  margin: 0;
   padding: 35px 33px 60px 33px;
 
   width: 240px;
@@ -237,10 +220,15 @@
 
   h3,
   p,
-  span {
+  .advantages__number {
     color: $white;
 
     text-align: center;
+  }
+
+  .advantages__number {
+    position: relative;
+    left: -3px;
   }
 
   p {
@@ -259,10 +247,13 @@
   }
 
   @media (max-width: $desktop-width) {
-    margin: 0 auto 42px auto;
-    padding: 14px 130px 37px 130px;
+    top: 25%;
 
-    width: 442px;
+    margin: 0;
+    padding: 15px 130px 36px 130px;
+
+    width: 100%;
+    max-width: 442px;
 
     h3 {
       top: -20px;
@@ -280,10 +271,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0 0 47px 0;
-    padding: 19px 55px 32px 55px;
+    top: 38%;
 
-    width: 100%;
+    margin: 0 0 47px 0;
+    padding: 19px 70px 32px 70px;
+
+    width: 110%;
 
     h3 {
       top: -24px;
