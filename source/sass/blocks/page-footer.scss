@@ -20,8 +20,6 @@
   align-items: center;
 
   a {
-    margin: 0 18px 0 0;
-
     font-family: $font--bebasneue-regular;
     font-size: 26px;
     line-height: 26px;
@@ -36,6 +34,11 @@
   }
 
   @media (max-width: $desktop-width) {
+    a {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
     span {
       margin: 0;
       padding: 0;
@@ -55,5 +58,18 @@
       font-size: 20px;
       line-height: 20px;
     }
+
+    .page-footer__logo {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+.page-footer__logo {
+  margin: 0 25px 0 0;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 20px 0 0;
   }
 }

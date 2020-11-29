@@ -44,8 +44,15 @@
     opacity: 0.5;
   }
 
+  &--vk {
+    position: relative;
+    top: -5px;
+  }
+
   @media (max-width: $tablet-width) {
     &--vk {
+      top: -1px;
+
       width: 32px;
       height: 17px;
     }
