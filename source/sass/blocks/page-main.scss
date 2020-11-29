@@ -8,8 +8,6 @@
   border-top: 1px solid $blue;
 
   @media (max-width: $desktop-width) {
-    background-image: linear-gradient(180deg, $blue 0%, $blue 48%, $white 48%, $white 100%);
-
     border: none;
   }
 
@@ -30,11 +28,7 @@
     &--free-class {
       flex-direction: column;
       justify-content: flex-start;
-    }
-  }
 
-  @media (max-width: $tablet-width) {
-    &--free-class {
       padding: 0;
     }
   }
