@@ -3,8 +3,6 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .list-time__item {
@@ -20,6 +18,12 @@
 
   color: $blue;
   border: 2px solid $blue;
+
+  &--active {
+    border: 2px solid $red;
+    background-color: $red;
+    color: $white;
+  }
 
   &:last-child {
     margin: 0;

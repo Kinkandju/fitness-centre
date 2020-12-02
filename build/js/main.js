@@ -87,7 +87,7 @@
     element.classList.remove(className);
   }
 
-  function removeClassJs(item, classItem) {
+  function removeClasses(item, classItem) {
     for (var i = 0; i < item.length; i++) {
       item[i].classList.remove(classItem);
     }
@@ -110,7 +110,7 @@
   }
 
   function isButtonActive() {
-    removeClassJs(listDescription, 'season-tickets__list-with-description--no-js');
+    removeClasses(listDescription, 'season-tickets__list-with-description--no-js');
 
     seasonTickets.forEach(function (element) {
       hideListDescription(1);
@@ -146,7 +146,7 @@
 
     removeClassList(coachesGroup, 'coaches__group--no-js');
     removeClassList(coachesList, 'coaches__list--no-js');
-    removeClassJs(coachesItems, 'coaches__item--no-js');
+    removeClasses(coachesItems, 'coaches__item--no-js');
 
     new Swiper(coachesSlider, {
       navigation: {
@@ -188,7 +188,7 @@
 
     removeClassList(feedbackGroup, 'feedback__group--no-js');
     removeClassList(feedbackList, 'feedback__list--no-js');
-    removeClassJs(feedbackItems, 'feedback__item--no-js');
+    removeClasses(feedbackItems, 'feedback__item--no-js');
 
     new Swiper(feedbackSlider, {
       slidesPerView: 1,
@@ -206,5 +206,20 @@
   }
 
   runFeedbackSlider();
+
+  // var timeList = document.querySelector('.list-time');
+  // var timeItems = timeList.querySelectorAll('.list-time__item');
+  // var dayList = document.querySelector('.list-day');
+  // var dayItems = dayList.querySelectorAll('.list-day__item');
+  // var sportLists = document.querySelectorAll('.list-sport');
+  // var sportItems = document.querySelectorAll('.list-sport__item');
+  //
+  // function getDayAttribute(element) {
+  //   element.getAttribute('data-day');
+  // }
+  //
+  // function getTimeAttribute(element) {
+  //   element.getAttribute('data-time');
+  // }
 
 })();

@@ -9,18 +9,33 @@
   padding: 0 55px;
 
   width: 100%;
-  max-width: 1270px;
+  max-width: 1230px;
 }
 
 .calendar__group {
-  &--columns,
-  &--sport {
+  &--all {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
   }
 
+  &--time {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &--rows {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
   &--sport {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
     width: 100%;
   }
 }

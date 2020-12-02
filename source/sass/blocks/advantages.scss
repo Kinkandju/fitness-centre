@@ -63,7 +63,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 67px 0 63px 0;
+    padding: 67px 0 22px 0;
 
     h2 {
       margin: 0 0 52px 0;
@@ -115,8 +115,16 @@
 
   width: 33.5%;
 
-  &:nth-child(-n+2) {
+  &:nth-child(-n+3) {
     align-self: flex-start;
+  }
+
+  &:nth-child(even) {
+    margin: 0 auto 0 0;
+  }
+
+  &:nth-child(odd) {
+    margin: 0 0 0 auto;
   }
 
   @media (max-width: $desktop-width) {
@@ -128,62 +136,14 @@
 
     width: 100%;
 
-    &:nth-child(2) {
+    &:nth-child(even),
+    &:nth-child(odd) {
+      margin: 0 0 40px 0;
+    }
+
+    &:nth-child(3) {
       margin: 0 0 330px 0;
     }
-  }
-}
-
-.advantages__space {
-  p {
-    margin: 0 25px 0 0;
-  }
-
-  @media (max-width: $desktop-width) {
-    padding: 0 25px 0 0;
-
-    p {
-      margin: 0 5px 0 0;
-    }
-  }
-
-  @media (max-width: $tablet-width) {
-    margin: 0 0 40px 0;
-    padding: 0 48px;
-  }
-}
-
-.advantages__parking {
-  @media (max-width: $desktop-width) {
-    padding: 0;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 0 30px;
-  }
-}
-
-.advantages__comfort {
-  position: relative;
-  left: -8px;
-
-  @media (max-width: $desktop-width) {
-    left: -2px;
-  }
-
-  @media (max-width: $tablet-width) {
-    margin: 0 0 40px 0;
-    padding: 0 35px;
-  }
-}
-
-.advantages__experience {
-  @media (max-width: $desktop-width) {
-    padding: 0 0 0 0.15%;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 0 30px;
   }
 }
 
@@ -255,9 +215,8 @@
   }
 
   @media (max-width: $desktop-width) {
-    top: 25%;
+    top: 30%;
 
-    margin: 0;
     padding: 15px 130px 36px 130px;
 
     width: 100%;
@@ -284,9 +243,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    top: 38%;
+    top: 36.6%;
 
-    margin: 0 0 47px 0;
     padding: 19px 70px 32px 70px;
 
     width: 110%;
@@ -298,6 +256,59 @@
     p {
       top: -13px;
     }
+  }
+}
+
+.advantages__space {
+  p {
+    margin: 0 25px 0 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 0 25px 0 0;
+
+    p {
+      margin: 0 5px 0 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 40px 0;
+    padding: 0 48px;
+  }
+}
+
+.advantages__parking {
+  @media (max-width: $desktop-width) {
+    padding: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
+.advantages__comfort {
+  position: relative;
+  left: -8px;
+
+  @media (max-width: $desktop-width) {
+    left: -2px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 40px 0;
+    padding: 0 35px;
+  }
+}
+
+.advantages__experience {
+  @media (max-width: $desktop-width) {
+    padding: 0 0 0 0.15%;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 30px;
   }
 }
 

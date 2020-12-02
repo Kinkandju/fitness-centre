@@ -1,17 +1,17 @@
 .list-day {
-  margin: 0 4px 8px 6.1%;
-
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
+
+  margin: 0 0 8px 0;
 }
 
 .list-day__item {
   margin: 0 8px 0 0;
   padding: 21px 0;
 
-  width: 13.63%;
+  width: 13.6%;
 
   font-family: $font--roboto-regular;
   font-size: 18px;
@@ -20,6 +20,12 @@
 
   color: $blue;
   border: 2px solid $blue;
+
+  &--active {
+    border: 2px solid $red;
+    background-color: $red;
+    color: $white;
+  }
 
   &:last-child {
     margin: 0;
