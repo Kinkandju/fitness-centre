@@ -79,13 +79,13 @@
   var seasonTickets = document.querySelectorAll('.season-tickets__time');
   var listDescription = document.querySelectorAll('.season-tickets__list-with-description');
 
-  function addClassList(element, className) {
-    element.classList.add(className);
-  }
-
-  function removeClassList(element, className) {
-    element.classList.remove(className);
-  }
+  // function addClassList(element, className) {
+  //   element.classList.add(className);
+  // }
+  //
+  // function removeClassList(element, className) {
+  //   element.classList.remove(className);
+  // }
 
   function removeClasses(item, classItem) {
     for (var i = 0; i < item.length; i++) {
@@ -138,88 +138,128 @@
 
   isButtonActive(seasonTickets);
 
-  function runCoachesSlider() {
-    var coachesSlider = document.querySelector('.coaches__slider');
-    var coachesGroup = document.querySelector('.coaches__group');
-    var coachesList = document.querySelector('.coaches__list');
-    var coachesItems = document.querySelectorAll('.coaches__item');
+  // function runCoachesSlider() {
+  //   var coachesSlider = document.querySelector('.coaches__slider');
+  //   var coachesGroup = document.querySelector('.coaches__group');
+  //   var coachesList = document.querySelector('.coaches__list');
+  //   var coachesItems = document.querySelectorAll('.coaches__item');
+  //
+  //   removeClassList(coachesGroup, 'coaches__group--no-js');
+  //   removeClassList(coachesList, 'coaches__list--no-js');
+  //   removeClasses(coachesItems, 'coaches__item--no-js');
+  //
+  //   new Swiper(coachesSlider, {
+  //     navigation: {
+  //       nextEl: '.coaches__button--next',
+  //       prevEl: '.coaches__button--previous'
+  //     },
+  //     keyboard: {
+  //       enabled: true,
+  //       onlyInViewport: true,
+  //       pageUpDown: true
+  //     },
+  //     breakpoints: {
+  //       320: {
+  //         slidesPerView: 1,
+  //         slidesPerGroup: 1
+  //       },
+  //       768: {
+  //         slidesPerView: 2,
+  //         slidesPerGroup: 2,
+  //         spaceBetween: 30
+  //       },
+  //       1200: {
+  //         slidesPerView: 4,
+  //         slidesPerGroup: 4,
+  //         spaceBetween: 40
+  //       }
+  //     },
+  //     loop: true
+  //   });
+  // }
+  //
+  // runCoachesSlider();
 
-    removeClassList(coachesGroup, 'coaches__group--no-js');
-    removeClassList(coachesList, 'coaches__list--no-js');
-    removeClasses(coachesItems, 'coaches__item--no-js');
-
-    new Swiper(coachesSlider, {
-      navigation: {
-        nextEl: '.coaches__button--next',
-        prevEl: '.coaches__button--previous'
-      },
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown: true
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          slidesPerGroup: 1
-        },
-        768: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          spaceBetween: 30
-        },
-        1200: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-          spaceBetween: 40
-        }
-      },
-      loop: true
-    });
-  }
-
-  runCoachesSlider();
-
-  function runFeedbackSlider() {
-    var feedbackSlider = document.querySelector('.feedback__slider');
-    var feedbackGroup = document.querySelector('.feedback__group');
-    var feedbackList = document.querySelector('.feedback__list');
-    var feedbackItems = document.querySelectorAll('.feedback__item');
-
-    removeClassList(feedbackGroup, 'feedback__group--no-js');
-    removeClassList(feedbackList, 'feedback__list--no-js');
-    removeClasses(feedbackItems, 'feedback__item--no-js');
-
-    new Swiper(feedbackSlider, {
-      slidesPerView: 1,
-      navigation: {
-        nextEl: '.feedback__button--next',
-        prevEl: '.feedback__button--previous'
-      },
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown: true
-      },
-      loop: true
-    });
-  }
-
-  runFeedbackSlider();
+  // function runFeedbackSlider() {
+  //   var feedbackSlider = document.querySelector('.feedback__slider');
+  //   var feedbackGroup = document.querySelector('.feedback__group');
+  //   var feedbackList = document.querySelector('.feedback__list');
+  //   var feedbackItems = document.querySelectorAll('.feedback__item');
+  //
+  //   removeClassList(feedbackGroup, 'feedback__group--no-js');
+  //   removeClassList(feedbackList, 'feedback__list--no-js');
+  //   removeClasses(feedbackItems, 'feedback__item--no-js');
+  //
+  //   new Swiper(feedbackSlider, {
+  //     slidesPerView: 1,
+  //     navigation: {
+  //       nextEl: '.feedback__button--next',
+  //       prevEl: '.feedback__button--previous'
+  //     },
+  //     keyboard: {
+  //       enabled: true,
+  //       onlyInViewport: true,
+  //       pageUpDown: true
+  //     },
+  //     loop: true
+  //   });
+  // }
+  //
+  // runFeedbackSlider();
 
   // var timeList = document.querySelector('.list-time');
-  // var timeItems = timeList.querySelectorAll('.list-time__item');
+  var timeItems = document.querySelectorAll('.list-time__item');
   // var dayList = document.querySelector('.list-day');
-  // var dayItems = dayList.querySelectorAll('.list-day__item');
+  var dayItems = document.querySelectorAll('.list-day__item');
   // var sportLists = document.querySelectorAll('.list-sport');
-  // var sportItems = document.querySelectorAll('.list-sport__item');
-  //
-  // function getDayAttribute(element) {
-  //   element.getAttribute('data-day');
-  // }
-  //
-  // function getTimeAttribute(element) {
-  //   element.getAttribute('data-time');
-  // }
+  var sportItems = document.querySelectorAll('.list-sport__item');
+
+  function clickSportItems() {
+
+    removeClasses(dayItems, 'list-day__item--active');
+
+    function getAttribute(element, attribute) {
+      for (var i = 0; i < element.length; i++) {
+        element[i].getAttribute(attribute);
+      }
+    }
+
+    function setActiveClass(data, elements, attribute, activeClass) {
+      for (var i = 0; i < elements.length; i++) {
+        var dataElement = getAttribute(elements[i], attribute);
+        if (data === dataElement) {
+          elements[i].classList.add(activeClass);
+        } else {
+          elements[i].classList.remove(activeClass);
+        }
+      }
+    }
+
+    for (var i = 0; i < sportItems.length; i++) {
+      sportItems[i].addEventListener('click', function (evt) {
+        evt.preventDefault();
+
+        if (!evt.target.classList.contains('list-sport__item--active')) {
+
+          if (!evt.target.classList.contains('list-sport__item--clicked')) {
+            removeClasses(sportItems, 'list-sport__item--active');
+
+            evt.target.classList.add('list-sport__item--active');
+            evt.target.classList.add('list-sport__item--clicked');
+
+            var date = getAttribute(evt.target, 'data-day');
+            var time = getAttribute(evt.target, 'data-time');
+
+            setActiveClass(date, dayItems, 'data-day', 'list-day__item--active');
+            setActiveClass(time, timeItems, 'data-time', 'list-time__item--active');
+          } else {
+            evt.target.classList.remove('list-sport__item--clicked');
+          }
+        }
+      });
+    }
+  }
+
+  clickSportItems();
 
 })();

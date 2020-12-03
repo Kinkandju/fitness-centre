@@ -29,7 +29,15 @@
 
   cursor: pointer;
 
+  &--clicked {
+    padding: 42px 0;
+
+    border: 2px solid $blue;
+  }
+
   &--active {
+    padding: 42px 0;
+
     border: 2px solid $red;
     background-color: $white;
     color: $red;
