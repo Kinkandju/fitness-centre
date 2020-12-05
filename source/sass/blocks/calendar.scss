@@ -10,6 +10,10 @@
 
   width: 100%;
   max-width: 1230px;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 45px;
+  }
 }
 
 .calendar__group {
@@ -37,6 +41,45 @@
     justify-content: flex-start;
 
     width: 100%;
+  }
+
+  @media (max-width: $desktop-width) {
+    &--day {
+      width: 1073px;
+    }
+
+    &--rows {
+      width: 608px;
+      overflow-x: scroll;
+    }
+
+    &--sport {
+      margin: 0 0 8px 0;
+      width: 1073px;
+    }
+
+    scrollbar-color: $red $transparent-crimson;
+    scrollbar-width: thin;
+
+    overflow: auto;
+    scrollbar-base-color: $transparent-crimson;
+    scrollbar-face-color: $red;
+    // scrollbar-3dlight-color: $red;
+    // scrollbar-highlight-color: $red;
+    // scrollbar-track-color: $transparent-crimson;
+    scrollbar-track-color: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    scrollbar-arrow-color: $transparent-crimson;
+    scrollbar-shadow-color: $red;
+    // scrollbar-dark-shadow-color: $red;
+
+    &::-webkit-scrollbar {
+      height: 4px;
+      background-color: $transparent-crimson;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $red;
+    }
   }
 }
 

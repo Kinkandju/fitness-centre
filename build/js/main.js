@@ -79,13 +79,13 @@
   var seasonTickets = document.querySelectorAll('.season-tickets__time');
   var listDescription = document.querySelectorAll('.season-tickets__list-with-description');
 
-  // function addClassList(element, className) {
-  //   element.classList.add(className);
-  // }
-  //
-  // function removeClassList(element, className) {
-  //   element.classList.remove(className);
-  // }
+  function addClassList(element, className) {
+    element.classList.add(className);
+  }
+
+  function removeClassList(element, className) {
+    element.classList.remove(className);
+  }
 
   function removeClasses(item, classItem) {
     for (var i = 0; i < item.length; i++) {
@@ -179,7 +179,7 @@
   // }
   //
   // runCoachesSlider();
-
+  //
   // function runFeedbackSlider() {
   //   var feedbackSlider = document.querySelector('.feedback__slider');
   //   var feedbackGroup = document.querySelector('.feedback__group');
@@ -219,18 +219,16 @@
     removeClasses(dayItems, 'list-day__item--active');
 
     function getAttribute(element, attribute) {
-      for (var i = 0; i < element.length; i++) {
-        element[i].getAttribute(attribute);
-      }
+      element.getAttribute(attribute);
     }
 
-    function setActiveClass(data, elements, attribute, activeClass) {
-      for (var i = 0; i < elements.length; i++) {
-        var dataElement = getAttribute(elements[i], attribute);
-        if (data === dataElement) {
-          elements[i].classList.add(activeClass);
+    function setActiveClass(data, items, attribute, activeClass) {
+      for (var i = 0; i < items.length; i++) {
+        var dataAttribute = getAttribute(items[i], attribute);
+        if (data === dataAttribute) {
+          addClassList(items[i], activeClass);
         } else {
-          elements[i].classList.remove(activeClass);
+          removeClassList(items[i], activeClass);
         }
       }
     }
@@ -243,9 +241,8 @@
 
           if (!evt.target.classList.contains('list-sport__item--clicked')) {
             removeClasses(sportItems, 'list-sport__item--active');
-
-            evt.target.classList.add('list-sport__item--active');
-            evt.target.classList.add('list-sport__item--clicked');
+            addClassList(evt.target, 'list-sport__item--active');
+            addClassList(evt.target, 'list-sport__item--clicked');
 
             var date = getAttribute(evt.target, 'data-day');
             var time = getAttribute(evt.target, 'data-time');
@@ -253,7 +250,7 @@
             setActiveClass(date, dayItems, 'data-day', 'list-day__item--active');
             setActiveClass(time, timeItems, 'data-time', 'list-time__item--active');
           } else {
-            evt.target.classList.remove('list-sport__item--clicked');
+            removeClassList(evt.target, 'list-sport__item--clicked');
           }
         }
       });
