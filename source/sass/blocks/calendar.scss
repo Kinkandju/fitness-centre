@@ -45,7 +45,7 @@
 
   @media (max-width: $desktop-width) {
     &--day {
-      width: 1073px;
+      width: 1068px;
     }
 
     &--rows {
@@ -54,23 +54,17 @@
     }
 
     &--sport {
-      margin: 0 0 8px 0;
-      width: 1073px;
+      margin: 0 0 2px 0;
+      width: 1068px;
     }
 
     scrollbar-color: $red $transparent-crimson;
     scrollbar-width: thin;
-
-    overflow: auto;
     scrollbar-base-color: $transparent-crimson;
+    scrollbar-track-color: inset $transparent-crimson;
     scrollbar-face-color: $red;
-    // scrollbar-3dlight-color: $red;
-    // scrollbar-highlight-color: $red;
-    // scrollbar-track-color: $transparent-crimson;
-    scrollbar-track-color: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    scrollbar-arrow-color: $transparent-crimson;
     scrollbar-shadow-color: $red;
-    // scrollbar-dark-shadow-color: $red;
+    scrollbar-arrow-color: $red;
 
     &::-webkit-scrollbar {
       height: 4px;
