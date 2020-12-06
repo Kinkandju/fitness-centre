@@ -5,6 +5,10 @@
   align-items: center;
 
   margin: 0 0 8px 0;
+
+  @media (max-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .list-day__item {
@@ -34,5 +38,26 @@
 
   @media (max-width: $desktop-width) {
     min-height: 65px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+
+    width: 100%;
+    min-height: 60px;
+    max-height: 60px;
+
+    font-size: 16px;
+    line-height: 16px;
+
+    border-right: none;
+
+    &--active {
+      border-right: none;
+    }
+
+    &--js {
+      display: none;
+    }
   }
 }

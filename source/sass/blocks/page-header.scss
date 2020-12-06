@@ -53,6 +53,15 @@
       letter-spacing: 0.03em;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 67px 0 44px 0;
+
+    h1 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
 }
 
 

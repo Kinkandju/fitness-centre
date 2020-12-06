@@ -11,6 +11,16 @@
   &:last-child {
     margin: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+
+    width: 100%;
+
+    &--js {
+      display: none;
+    }
+  }
 }
 
 .list-sport__item {
@@ -50,5 +60,15 @@
 
   @media (max-width: $desktop-width) {
     min-height: 108px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 33px 0;
+
+    min-height: 80px;
+    max-height: 80px;
+
+    font-size: 16px;
+    line-height: 16px;
   }
 }

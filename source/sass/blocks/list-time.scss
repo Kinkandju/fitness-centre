@@ -7,6 +7,10 @@
   @media (max-width: $desktop-width) {
     margin: 0 8px 6px 0;
   }
+
+  @media (max-width: $tablet-width) {
+    margin: 0 8px 2px 0;
+  }
 }
 
 .list-time__item {
@@ -37,5 +41,16 @@
   @media (max-width: $desktop-width) {
     max-width: 62px;
     min-height: 108px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 11px;
+
+    width: 60px;
+    min-height: 80px;
+    max-height: 80px;
+
+    font-size: 16px;
+    line-height: 16px;
   }
 }
