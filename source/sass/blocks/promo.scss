@@ -45,12 +45,15 @@
   margin: 0;
   padding: 76px 78px;
 
+  min-height: 500px;
+
   background-color: $red;
 
   @media (max-width: $desktop-width) {
     padding: 42px 45px;
 
     width: 43%;
+    min-height: 292px;
   }
 
   @media (max-width: $tablet-width) {
@@ -236,35 +239,73 @@
 }
 
 .promo__img {
-  width: 660px;
-  height: 500px;
+  position: relative;
+  // width: 660px;
+  // height: 500px;
+  width: 100%;
+  max-width: 660px;
 
-  img {
-    width: 660px;
-    height: 500px;
+  object-fit: cover;
+  object-position: center center;
 
-    object-fit: cover;
-    object-position: center center;
-  }
+  picture {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  @media (max-width: $desktop-width) {
-    width: 386px;
-    height: 292px;
-
-    img {
-      width: 386px;
-      height: 292px;
-    }
-  }
-
-  @media (max-width: $tablet-width) {
     width: 100%;
-    min-width: 290px;
-    height: 292px;
 
     img {
       width: 100%;
-      height: 292px;
+      max-width: 660px;
+      height: 500px;
     }
+  }
+
+  // img {
+  //   width: 660px;
+  //   height: 500px;
+  //
+  //   object-fit: cover;
+  //   object-position: center center;
+  // }
+
+  @media (max-width: $desktop-width) {
+    // width: 386px;
+    // height: 292px;
+
+    max-width: 386px;
+
+    picture {
+      img {
+        max-width: 386px;
+        height: 292px;
+      }
+    }
+
+    // img {
+    //   width: 386px;
+    //   height: 292px;
+    // }
+  }
+
+  @media (max-width: $tablet-width) {
+    // width: 100%;
+    // min-width: 290px;
+    // height: 292px;
+
+    max-width: 290px;
+
+    picture {
+      img {
+        max-width: 290px;
+        height: 292px;
+      }
+    }
+
+    // img {
+    //   width: 100%;
+    //   height: 292px;
+    // }
   }
 }
