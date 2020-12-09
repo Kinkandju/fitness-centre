@@ -115,10 +115,6 @@
 
   width: 33.5%;
 
-  &:nth-child(-n+3) {
-    align-self: flex-start;
-  }
-
   &:nth-child(even) {
     margin: 0 auto 0 0;
   }
@@ -126,6 +122,15 @@
   &:nth-child(odd) {
     margin: 0 0 0 auto;
   }
+
+  &:nth-child(-n+3) {
+    align-self: flex-start;
+  }
+
+  // &:nth-last-child(n+2) {
+  //   position: relative;
+  //   bottom: 0;
+  // }
 
   @media (max-width: $desktop-width) {
     width: 48%;

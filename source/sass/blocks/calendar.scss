@@ -112,6 +112,13 @@
     background-color: $transparent;
 
     cursor: pointer;
+
+    transition: all 0.3s;
+  }
+
+  &--active {
+    transform: rotate(180deg);
+    transition: all 0.3s;
   }
 }
 

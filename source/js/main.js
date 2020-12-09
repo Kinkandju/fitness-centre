@@ -147,10 +147,8 @@
 
   function clickSportItems() {
 
-    removeClasses(dayItems, 'list-day__item--active');
-
     function getAttribute(element, attribute) {
-      element.getAttribute(attribute);
+      return element.getAttribute(attribute);
     }
 
     function setActiveClass(data, items, attribute, activeClass) {
@@ -180,6 +178,7 @@
 
             setActiveClass(date, dayItems, 'data-day', 'list-day__item--active');
             setActiveClass(time, timeItems, 'data-time', 'list-time__item--active');
+
           } else {
             removeClassList(evt.target, 'list-sport__item--clicked');
           }
