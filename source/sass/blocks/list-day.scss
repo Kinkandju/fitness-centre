@@ -7,6 +7,7 @@
   margin: 0 0 8px 0;
 
   @media (max-width: $tablet-width) {
+    flex-direction: column;
     flex-grow: 1;
   }
 }
@@ -24,6 +25,7 @@
   text-align: center;
 
   color: $blue;
+  background-color: $white;
   border: 2px solid $blue;
 
   &--active {
@@ -41,7 +43,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 -2px 0;
 
     width: 100%;
     min-height: 60px;
@@ -49,8 +51,6 @@
 
     font-size: 16px;
     line-height: 16px;
-
-    border-right: none;
 
     &--active {
       border-right: none;

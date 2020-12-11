@@ -9,7 +9,11 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin: 0 8px 2px 0;
+    margin: 68px 8px 2px 0;
+
+    &--js {
+      opacity: 0.3;
+    }
   }
 }
 

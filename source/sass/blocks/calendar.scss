@@ -82,17 +82,29 @@
 
   @media (max-width: $tablet-width) {
     &--day {
+      position: absolute;
+      top: 0;
+
       display: flex;
       flex-direction: row;
 
       width: 100%;
+
+      background-color: $white;
+
+      z-index: 5;
     }
 
     &--rows {
+      position: relative;
+
       overflow-x: hidden;
+      overflow-y: hidden;
     }
 
     &--sport {
+      padding: 68px 0 0 0;
+
       width: 100%;
     }
   }
@@ -102,7 +114,10 @@
   display: none;
 
   @media (max-width: $tablet-width) {
+    position: relative;
     display: block;
+
+    margin: 0 0 0 -2px;
 
     width: 23%;
     max-width: 51px;
@@ -113,12 +128,26 @@
 
     cursor: pointer;
 
-    transition: all 0.3s;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .calendar__toggle-icon {
+      transition: all 0.3s;
+    }
   }
 
   &--active {
-    transform: rotate(180deg);
-    transition: all 0.3s;
+    .calendar__toggle-icon {
+      transform: rotate(180deg);
+      transition: all 0.3s;
+    }
   }
 }
 

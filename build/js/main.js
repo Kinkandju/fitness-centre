@@ -138,18 +138,15 @@
 
   isButtonActive(seasonTickets);
 
-  // var timeList = document.querySelector('.list-time');
   var timeItems = document.querySelectorAll('.list-time__item');
-  // var dayList = document.querySelector('.list-day');
   var dayItems = document.querySelectorAll('.list-day__item');
-  // var sportLists = document.querySelectorAll('.list-sport');
   var sportItems = document.querySelectorAll('.list-sport__item');
 
-  function clickSportItems() {
+  function getAttribute(element, attribute) {
+    return element.getAttribute(attribute);
+  }
 
-    function getAttribute(element, attribute) {
-      return element.getAttribute(attribute);
-    }
+  function clickSportItems() {
 
     function setActiveClass(data, items, attribute, activeClass) {
       for (var i = 0; i < items.length; i++) {
@@ -188,6 +185,104 @@
   }
 
   clickSportItems();
+
+  var sportLists = document.querySelectorAll('.list-sport');
+  var timeList = document.querySelector('.list-time');
+  var calendarToggle = document.querySelector('.calendar__toggle');
+
+  function getActiveElement(elements, activeClass) {
+    var activeElement;
+    elements.forEach(function (element) {
+      if (element.classList.contains(activeClass)) {
+        activeElement = element;
+      }
+    });
+    return activeElement;
+  }
+
+  var activeItem = getActiveElement(dayItems, 'active-item');
+  var activeList = getActiveElement(sportLists, 'active-list');
+
+  function openToggleMenu() {
+
+    function openMenu() {
+      removeClasses(dayItems, 'list-day__item--js');
+      addClassList(timeList, 'list-time--js');
+    }
+
+    function closeMenu() {
+      for (var i = 0; i < dayItems.length; i++) {
+        addClassList(dayItems[i], 'list-day__item--js');
+        removeClassList(timeList, 'list-time--js');
+
+        if (dayItems[i].classList.contains('active-item')) {
+          removeClassList(dayItems[i], 'list-day__item--js');
+        }
+      }
+    }
+
+    function hideLists() {
+      for (var i = 0; i < sportLists.length; i++) {
+        addClassList(sportLists[i], 'list-sport--js');
+      }
+    }
+
+    calendarToggle.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      removeClasses(dayItems, 'list-day__item--active');
+      removeClasses(timeItems, 'list-time__item--active');
+      removeClasses(sportItems, 'list-sport__item--active');
+
+      if (!evt.target.classList.contains('calendar__toggle--active')) {
+        addClassList(evt.target, 'calendar__toggle--active');
+
+        openMenu();
+        hideLists();
+
+      } else {
+        removeClassList(evt.target, 'calendar__toggle--active');
+        removeClassList(activeItem, 'list-day__item--js');
+        removeClassList(activeList, 'list-sport--js');
+
+        closeMenu();
+      }
+    });
+
+    function setListActiveClass(day) {
+      for (var i = 0; i < sportLists.length; i++) {
+        var listAttribute = getAttribute(sportLists[i], 'data-day');
+        if (day === listAttribute) {
+          removeClassList(sportLists[i], 'list-sport--js');
+          addClassList(sportLists[i], 'active-list');
+        } else {
+          addClassList(sportLists[i], 'list-sport--js');
+        }
+      }
+    }
+
+    for (var i = 0; i < dayItems.length; i++) {
+      dayItems[i].addEventListener('click', function (evt) {
+        evt.preventDefault();
+
+        closeMenu();
+        removeClasses(dayItems, 'active-item');
+        removeClasses(sportLists, 'active-list');
+
+        removeClassList(evt.target, 'list-day__item--js');
+        addClassList(evt.target, 'active-item');
+
+        var day = getAttribute(evt.target, 'data-day');
+
+        setListActiveClass(day);
+
+        removeClassList(calendarToggle, 'calendar__toggle--active');
+        closeMenu();
+      });
+    }
+  }
+
+  openToggleMenu();
 
   function runCoachesSlider() {
     var coachesSlider = document.querySelector('.coaches__slider');
