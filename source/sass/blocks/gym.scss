@@ -96,6 +96,8 @@
     }
 
     p {
+      width: calc(100% - 20px);
+
       text-align: center;
 
       & + p {
@@ -122,6 +124,9 @@
 
     p {
       padding: 0 30px 0 0;
+
+      width: calc(100% - 30px);
+
       text-align: left;
     }
   }

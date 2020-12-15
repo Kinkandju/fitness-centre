@@ -55,19 +55,6 @@
     var timeList = document.querySelector('.list-time');
     var calendarToggle = document.querySelector('.calendar__toggle');
 
-    var getActiveElement = function (elements, activeClass) {
-      var activeElement;
-      elements.forEach(function (element) {
-        if (element.classList.contains(activeClass)) {
-          activeElement = element;
-        }
-      });
-      return activeElement;
-    };
-
-    var activeItem = getActiveElement(dayItems, 'active-item');
-    var activeList = getActiveElement(sportLists, 'active-list');
-
     var openToggleMenu = function () {
       function openMenu() {
         window.removeClasses(dayItems, 'list-day__item--js');
@@ -81,6 +68,7 @@
 
           if (dayItems[i].classList.contains('active-item')) {
             window.removeClassList(dayItems[i], 'list-day__item--js');
+            window.removeClassList(sportLists[i], 'list-sport--js');
           }
         }
       }
@@ -106,8 +94,6 @@
 
         } else {
           window.removeClassList(evt.target, 'calendar__toggle--active');
-          window.removeClassList(activeItem, 'list-day__item--js');
-          window.removeClassList(activeList, 'list-sport--js');
 
           closeMenu();
         }
