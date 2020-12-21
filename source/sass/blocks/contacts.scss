@@ -92,6 +92,7 @@
 
 .contacts__item {
   span,
+  a,
   p {
     margin: 0;
     padding: 0;
@@ -109,18 +110,22 @@
     line-height: 18px;
   }
 
+  a,
   p {
-    margin: 0 0 21px 0;
-
     font-family: $font--roboto-regular;
     font-size: 14px;
     line-height: 21px;
   }
 
-  &:last-child {
-    p {
-      margin: 0;
+  &:hover,
+  &:focus {
+    a {
+      opacity: 0.5;
     }
+  }
+
+  &:first-child {
+    margin: 0 0 21px 0;
   }
 
   @media (max-width: $desktop-width) {
@@ -129,11 +134,14 @@
       line-height: 30px;
     }
 
+    a,
     p {
-      margin: 0 0 19px 0;
-
       font-size: 18px;
       line-height: 27px;
+    }
+
+    &:first-child {
+      margin: 0 0 19px 0;
     }
   }
 }

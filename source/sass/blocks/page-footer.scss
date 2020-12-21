@@ -26,11 +26,6 @@
     letter-spacing: 0.03em;
 
     color: $white;
-
-    &:hover,
-    &:focus {
-      opacity: 0.5;
-    }
   }
 
   @media (max-width: $desktop-width) {
@@ -68,6 +63,8 @@
 
 .page-footer__logo {
   margin: 0 25px 0 0;
+
+  cursor: default;
 
   @media (max-width: $desktop-width) {
     margin: 0 20px 0 0;

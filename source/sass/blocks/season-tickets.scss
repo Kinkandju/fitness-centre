@@ -52,13 +52,16 @@
     }
 
     &::after {
-      bottom: -7.7%;
-      right: -10.9%;
+      // bottom: -7.7%;
+      // right: -10.9%;
+      bottom: -9.6%;
+      right: -15.8%;
 
-      width: 438px;
-      height: 462px;
+      // width: 438px;
+      // height: 462px;
 
-      background-size: 438px 462px;
+      // background-size: 438px 462px;
+      background-size: 425px 450px;
     }
   }
 
@@ -295,6 +298,10 @@
 
     width: 100%;
     max-width: 442px;
+
+    &:nth-child(2n) {
+      margin: 0 0 40px 0;
+    }
 
     &:last-child {
       margin: 0;

@@ -72,6 +72,7 @@
   align-items: flex-end;
 
   span,
+  .page-header__logo,
   .page-header__link {
     margin: 0;
     padding: 0;
@@ -84,6 +85,10 @@
     letter-spacing: 0.03em;
 
     color: $white;
+  }
+
+  .page-header__logo {
+    cursor: default;
   }
 
   .page-header__link {

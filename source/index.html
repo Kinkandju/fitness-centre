@@ -18,7 +18,7 @@
   <header class="page-header">
     <div class="page-header__layout-container layout-container">
       <div class="page-header__group">
-        <a class="page-header__link" href="#" aria-label="Логотип компании">Supergym</a>
+        <a class="page-header__logo" href="#" aria-label="Логотип компании">Supergym</a>
         <a class="page-header__link" href="tel:+78005555555" aria-label="Телефон компании">8-800-555-55-55</a>
       </div>
 
@@ -44,7 +44,7 @@
             <source type="image/webp" media="(min-width: 768px)" srcset="img/athletes/sportsman_tablet_1x.webp, img/athletes/sportsman_tablet_2x.webp 2x">
 
             <source media="(min-width: 1200px)" srcset="img/athletes/sportsman_desktop_1x.jpg, img/athletes/sportsman_desktop_2x.jpg 2x">
-            <img media="(min-width: 768px)" src="img/athletes/sportsman_tablet_1x.jpg" srcset="img/athletes/sportsman_tablet_2x.jpg 2x" width="324" height="390" alt="Изображение спортсмена">
+            <img src="img/athletes/sportsman_tablet_1x.jpg" srcset="img/athletes/sportsman_tablet_2x.jpg 2x" width="324" height="390" alt="Изображение спортсмена">
           </picture>
         </div>
 
@@ -94,6 +94,7 @@
         <div class="gym__video">
           <button class="gym__button button" type="button" aria-label="Воспроизвести видео"></button>
         </div>
+
       </section>
     </div>
 
@@ -628,11 +629,11 @@
             <ul class="contacts__list contacts__list--right">
               <li class="contacts__item">
                 <span>Телефон:</span>
-                <p>8-800-555-55-55</p>
+                <a href="tel:+78005555555" aria-label="Телефон компании">8-800-555-55-55</a>
               </li>
               <li class="contacts__item">
                 <span>Email:</span>
-                <p>omsk@supergym.ru</p>
+                <a href="mailto:omsk@supergym.ru" aria-label="Электронная почта компании">omsk@supergym.ru</a>
               </li>
             </ul>
           </div>
