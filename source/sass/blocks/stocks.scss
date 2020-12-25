@@ -258,7 +258,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  margin: 0;
+  margin: 0 0 40px 0;
   padding: 25px 27px 28px 27px;
 
   min-height: 211px;
@@ -267,6 +267,10 @@
   border-width: 7px;
   border-image: linear-gradient(to bottom right, $crimson, $light-blue);
   border-image-slice: 1;
+
+  &:last-child {
+    margin: 0;
+  }
 
   h3 {
     margin: 0 0 10px 0;
@@ -291,6 +295,8 @@
   }
 
   @media (max-width: $desktop-width) {
+    margin: 0;
+
     width: 47.8%;
 
     &:first-child {

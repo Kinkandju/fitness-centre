@@ -19,6 +19,9 @@ body {
 
   min-width: 320px;
 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+
   background-clip: content-box;
 }
 
