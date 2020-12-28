@@ -45,3 +45,15 @@
     url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
     url("../fonts/BebasNeue-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "BebasNeue-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local("BebasNeue"),
+    local("BebasNeue-Bold"),
+    url("../fonts/BebasNeue-Bold.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Bold.woff") format("woff");
+}
