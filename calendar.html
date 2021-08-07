@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебный проект Акселератора - Supergym (расписание занятий)">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous" rel="preload">
+  <link href="fonts/BebasNeue-Regular.woff2" as="font" crossorigin="anonymous" rel="preload">
+  <link href="css/style.min.css" rel="stylesheet">
+  <title>Расписание занятий фитнес центра Supergym</title>
+</head>
+
+<body>
+  <header class="page-header page-header__calendar">
+    <h1>Расписание</h1>
+  </header>
+
+  <main class="page-main page-main__calendar calendar">
+    <div class="calendar__layout-container">
+
+      <div class="calendar__group calendar__group--all">
+        <div class="calendar__group calendar__group--time">
+          <ul class="calendar__list-time list-time">
+            <li class="list-time__item" data-time="morning">08:00</li>
+            <li class="list-time__item" data-time="midday">12:00</li>
+            <li class="list-time__item" data-time="day">18:00</li>
+            <li class="list-time__item" data-time="evening">20:00</li>
+          </ul>
+        </div>
+
+        <div class="calendar__group calendar__group--rows">
+          <div class="calendar__group calendar__group--day">
+            <ul class="calendar__list-day list-day">
+              <li class="list-day__item active-item" data-day="monday">Понедельник</li>
+              <li class="list-day__item list-day__item--js" data-day="tuesday">Вторник</li>
+              <li class="list-day__item list-day__item--js" data-day="wednesday">Среда</li>
+              <li class="list-day__item list-day__item--js" data-day="thursday">Четверг</li>
+              <li class="list-day__item list-day__item--js" data-day="friday">Пятница</li>
+              <li class="list-day__item list-day__item--js" data-day="saturday">Суббота</li>
+              <li class="list-day__item list-day__item--js" data-day="sunday">Воскресенье</li>
+            </ul>
+
+            <button class="calendar__toggle" type="button" aria-label="Выбор дня недели">
+              <svg class="calendar__toggle-icon" width="21" height="13">
+                <use xlink:href="img/sprite.svg#icon_calendar_arrow"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="calendar__group calendar__group--sport">
+            <ul class="calendar__list-sport list-sport active-list" data-day="monday">
+              <li class="list-sport__item" data-day="monday" data-time="morning">CrossFit</li>
+              <li class="list-sport__item" data-day="monday" data-time="midday">Body Sculpt</li>
+              <li class="list-sport__item" data-day="monday" data-time="day">Functional</li>
+              <li class="list-sport__item" data-day="monday" data-time="evening">Stretching</li>
+            </ul>
+
+            <ul class="calendar__list-sport list-sport list-sport--js" data-day="tuesday">
+              <li class="list-sport__item" data-day="tuesday" data-time="morning">Aerostretching</li>
+              <li class="list-sport__item" data-day="tuesday" data-time="midday">CrossFit</li>
+              <li class="list-sport__item" data-day="tuesday" data-time="day">Body Sculpt</li>
+              <li class="list-sport__item" data-day="tuesday" data-time="evening">Functional</li>
+            </ul>
+
+            <ul class="calendar__list-sport list-sport list-sport--js" data-day="wednesday">
+              <li class="list-sport__item" data-day="wednesday" data-time="morning">Hot Iron</li>
+              <li class="list-sport__item" data-day="wednesday" data-time="midday">Aerostretching</li>
+              <li class="list-sport__item" data-day="wednesday" data-time="day">CrossFit</li>
+              <li class="list-sport__item" data-day="wednesday" data-time="evening">Body Sculpt</li>
+            </ul>
+
+            <ul class="calendar__list-sport list-sport list-sport--js" data-day="thursday">
+              <li class="list-sport__item" data-day="thursday" data-time="morning">Pilates</li>
+              <li class="list-sport__item" data-day="thursday" data-time="midday">Hot Iron</li>
+              <li class="list-sport__item" data-day="thursday" data-time="day">Aerostretching</li>
+              <li class="list-sport__item" data-day="thursday" data-time="evening">CrossFit</li>
+            </ul>
+
+            <ul class="calendar__list-sport list-sport list-sport--js" data-day="friday">
+              <li class="list-sport__item" data-day="friday" data-time="morning">Stretching</li>
+              <li class="list-sport__item" data-day="friday" data-time="midday">Pilates</li>
+              <li class="list-sport__item" data-day="friday" data-time="day">Hot Iron</li>
+              <li class="list-sport__item" data-day="friday" data-time="evening">Aerostretching</li>
+            </ul>
+
+            <ul class="calendar__list-sport list-sport list-sport--js" data-day="saturday">
+              <li class="list-sport__item" data-day="saturday" data-time="morning">Functional</li>
+              <li class="list-sport__item" data-day="saturday" data-time="midday">Stretching</li>
+              <li class="list-sport__item" data-day="saturday" data-time="day">Pilates</li>
+              <li class="list-sport__item" data-day="saturday" data-time="evening">Hot Iron</li>
+            </ul>
+
+            <ul class="calendar__list-sport list-sport list-sport--js" data-day="sunday">
+              <li class="list-sport__item" data-day="sunday" data-time="morning">Body Sculpt</li>
+              <li class="list-sport__item" data-day="sunday" data-time="midday">Functional</li>
+              <li class="list-sport__item" data-day="sunday" data-time="day">Stretching</li>
+              <li class="list-sport__item" data-day="sunday" data-time="evening">Pilates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
